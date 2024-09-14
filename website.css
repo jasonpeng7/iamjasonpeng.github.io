@@ -465,30 +465,30 @@ body{
 
 #modal-button1:hover{
     background-color: rgba(213, 206, 213, 0.558);
-    width: 80%
+    min-width: 100vh;
 }
 #modal-button2:hover{
     background-color: rgba(213, 206, 213, 0.558);
-    width: 60%;
+    min-width: 80vh;
 }
 #modal-button3:hover{
     background-color: rgba(213, 206, 213, 0.558);
-    width: 100%
+    min-width: 70vh;
 }
 
 #modal-button4:hover{
     background-color: rgba(213, 206, 213, 0.558);
-    width: 25%
+    min-width: 90vh;
 }
 
 
 
 #purple-logo{
     position: absolute;
-    width: 4.7%;
-    top: 0.8%;
-    left: 1%;
-    margin: 1%;
+    min-width: 8.5vh;
+    max-width: 8.5vh;
+    top: 3vh;
+    left: 4vh;
     cursor: pointer;
     z-index: 9999;
 }
@@ -500,29 +500,44 @@ body{
 }
 .modal-button-content1{
     position: absolute;
-    top: 40.5%;
-    left: 19.5%;
-
+    top: 39vh;
+    left: 36vh;
+    max-width: 25vh;
+    min-width: 20vh;
+    transform: translateY(0);
+    transform:translateX(0);
 }
 
 .modal-button-content2{
     position: absolute;
-    top: 70.5%;
-    left: 16%;
+    top: 67.5vh;
+    left: 29.5vh;
+    max-width: 25vh;
+    min-width: 20vh;
+    transform: translateY(0);
+    transform:translateX(0);
 
 }
 
 .modal-button-content3{
     position: absolute;
-    top: 85.5%;
-    left: 15.5%;
+    top: 82vh;
+    left: 29vh;
+    max-width: 15vh;
+    min-width: 10vh;
+    transform: translateY(0);
+    transform:translateX(0);
 
 }
 
 .modal-button-content4{
     position: absolute;
-    top: 55.5%;
-    left: 18%;
+    top: 53vh;
+    left: 33.5vh;
+    max-width: 15vh;
+    min-width: 10vh;
+    transform: translateY(0);
+    transform:translateX(0);
 
 }
 
@@ -789,36 +804,47 @@ section{
 
 .background{
     position: absolute;
-    top: -30%;
+    top: 0vh;
     left: 100%;
-    width: 12%;
-    height: 12%;
+    min-width: 12vh;
+    max-width: 14vh;
+    max-height: 14vh;
+    min-height: 12vh;
     animation: moveBackground 45s linear infinite; 
+    transform: translateY(0);
 }
 
 .background-cloud2{
     position: absolute;
     left: 140%;
-    width: 12%;
-    height: 12%;
+    min-width: 12vh;
+    max-width: 14vh;
+    min-height: 12vh;
+    max-height: 14vh;
     animation: moveBackground-cloud2 65s linear infinite; 
+    transform: translateY(0);
 }
 
 .background-cloud3{
     position: absolute;
     left: 120%;
-    top: -30%;
-    width: 12%;
-    height: 12%;
+    top: 2vh;
+    max-width: 14vh;
+    min-width: 12vh;
+    min-height: 12vh;
+    min-width: 14vh;
     animation: moveBackground-cloud3 65s linear infinite; 
+    transform: translateY(0);
 }
 
 .background-cloud4{
     position: absolute;
     left: 160%;
-    top: -20%;
-    width: 12%;
-    height: 12%;
+    top: 1vh;
+    max-width: 14vh;
+    min-width: 12vh;
+    min-height: 12vh;
+    max-height: 14vh;
     animation: moveBackground-cloud4 65s linear infinite; 
 }
 
@@ -843,45 +869,65 @@ section{
 .foreground-tree1{
     position: absolute;
     left: 100%;
-    top: 8.8%;
-    width: 12%;
-    height: 10%; /* Example for a road */
+    top: 2vh;
+    max-width: 20vh;
+    min-width: 18vh;
+    max-height: 20vh; 
+    min-height: 18vh; 
     animation: moveForeground 15s linear infinite;
     z-index: 9;
-    /* background-color: rgba(0, 255, 255, 0.456); */
+    transform: translateY(0);
 }
 
 .foreground-tree2{
     position: absolute;
     left: 130%;
-    top: 16.3%;
-    width: 11%;
-    height: 8%; /* Example for a road */
-    animation: moveForeground-tree2 16s linear infinite;
+    top: 2vh;
+    max-width: 20vh;
+    min-width: 18vh;
+    max-height: 20vh;
+    min-height: 18vh;
+    animation: moveForeground-tree2 15s linear infinite;
     z-index: 8;
-    /* background-color: rgba(0, 0, 255, 0.42); */
+    transform: translateY(0);
 }
 
 .foreground-tree3{
     position: absolute;
     left: 104%;
-    top: 24.3%;
-    width: 10%;
-    height: 6%; /* Example for a road */
+    top: 2vh;
+    max-width: 20vh;
+    min-width: 18vh;
+    max-height: 20vh;
+    min-height: 18vh;
     animation: moveForeground-tree3 15s linear infinite;
     z-index: 8;
-    /* background-color: rgba(226, 189, 43, 0.403); */
+    transform: translateY(0);
 }
 
 .foreground-tree4{
     position: absolute;
     left: 190%;
-    top: -31%;
-    width: 15%;
-    height: 17%; /* Example for a road */
-    animation: moveForeground-tree4 20s linear infinite;
+    top: -1.5vh;
+    max-width: 20vh;
+    min-width: 18vh;
+    max-height: 20vh;
+    min-height: 18vh;
+    animation: moveForeground-tree4 18s linear infinite;
     z-index: 8;
-    /* background-color: rgba(255, 228, 196, 0.468); */
+    transform: translateY(0);
+}
+
+dotlottie-player{
+    max-width: 10vh; 
+    min-width: 8vh;
+    max-height: 10vh;
+    min-width: 10vh;
+    position: fixed; 
+    top: 21.5vh; 
+    left: 30%; 
+    z-index: 10;
+    transform: translateY(0)
 }
 
 
@@ -907,63 +953,26 @@ section{
     z-index: 8;
 } */
 
-.foreground-road{
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    top: -700%;
+.foreground-road {
+    position: fixed;
+    left: 8vh;
+    width: 75.5%;
+    height: auto; /* Adjust height as needed */
+    top: 29.9vh; /* Adjust as necessary to place it correctly */
     z-index: 9;
-}
-
-.car {
-    position: absolute;
-    top: 14.5%;
-    width: 14%;
-    left: 30%;
-    fill: rgb(0, 21, 67);
-    z-index:10;
-    animation: car-bump 1.8s infinite ease-in;
-}
-
-.wagon{
-    position: absolute;
-    top: 29.5%;
-    width: 14%;
-    left: 23%;
-    fill: rgb(0, 21, 67);
-    z-index:9;
-    animation: car-bump 2s infinite ease-in;
-}
-
-.car-line1{
-    position: absolute;
-    top: 70%;
-    left: 18%;
-    width: 3%;
-    height: 3%;
-    background-color: rgba(0, 0, 0, 0.53);
-    z-index: 7;
-    animation: car-bump 1s infinite ease-in, carline-move 1.5s ease-in-out infinite;
-}
-
-.car-line2{
-    position: absolute;
-    top: 63%;
-    left: 17%;
-    width: 3%;
-    height: 3%;
-    background-color: rgba(0, 0, 0, 0.53);
-    z-index: 7;
-    animation: car-bump 1s infinite ease-in, carline-move 3s ease-in-out infinite;
+    transform: translateY(0); /* Ensure it doesn't move */
 }
 
 .sun{
     position: absolute;
-    width: 23%;
-    top: -38%;
+    min-width:28vh;
+    max-width: 30vh;
+    min-height: 28vh;
+    max-height: 30vh;
+    top: -2vh;
     left: 50%;
     animation: moveSun 60s linear infinite;
+
 }
 
 @keyframes car-bump{
@@ -1003,7 +1012,7 @@ section{
         transform: translateX(0);
     }
     to {
-        transform: translateX(-1500%);
+        transform: translateX(-1350%);
     }
 }
 
@@ -1012,7 +1021,7 @@ section{
         transform: translateX(0);
     }
     to {
-        transform: translateX(-1600%);
+        transform: translateX(-1330%);
     }
 }
 
@@ -1021,7 +1030,7 @@ section{
         transform: translateX(0);
     }
     to {
-        transform: translateX(-1400%);
+        transform: translateX(-1600%);
     }
 }
 

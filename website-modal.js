@@ -342,6 +342,9 @@ document.addEventListener('mousemove', (event) => {
     updateIrisPosition(event.clientX, event.clientY);
 });
 
+
+
+
 var i = 0;
 var textArray = ['an Aspiring Software Engineer.', 'an Independent Creator.', 'a Tech Enthusiast.', 'a Creative Developer.']; // Array of texts to type
 var currentIndex = 0;
