@@ -485,7 +485,7 @@ body{
 
 #purple-logo{
     position: absolute;
-    min-width: 8.5vh;
+    min-width: 8.5vh; 
     max-width: 8.5vh;
     top: 3vh;
     left: 4vh;
