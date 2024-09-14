@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Modal Example</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link your CSS file -->
+
+    <style>
+        /* styles.css */
+
+        /* Basic reset for margins and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Style the modal */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto; /* 15% from the top and centered */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; /* Could be more or less, depending on screen size */
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="image-change">
+        <svg class="folder-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 40">
+            <path d="M0.667 3.333c-0.368 0-0.667 0.299-0.667 0.667v24.666h31.333c0.368 0 0.667-0.299 0.667-0.666v-21.334c0-0.368-0.299-0.667-0.667-0.667h-15.666l-1.8-2.4c-0.126-0.168-0.323-0.267-0.533-0.267z"/>
+        </svg>
+
+        <svg class="hover-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 40">
+            <title>folder</title>
+            <path d="M0.667 3.333c-0.368 0-0.667 0.299-0.667 0.667v24.666h31.333c0.368 0 0.667-0.299 0.667-0.666v-21.334c0-0.368-0.299-0.667-0.667-0.667h-15.666l-1.8-2.4c-0.126-0.168-0.323-0.267-0.533-0.267z"/>
+        </svg>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="svgModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <!-- Add your SVG content here -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 40">
+                <path d="M0.667 3.333c-0.368 0-0.667 0.299-0.667 0.667v24.666h31.333c0.368 0 0.667-0.299 0.667-0.666v-21.334c0-0.368-0.299-0.667-0.667-0.667h-15.666l-1.8-2.4c-0.126-0.168-0.323-0.267-0.533-0.267z"/>
+            </svg>
+        </div>
+    </div>
+
+    <script src="modal.js"></script> <!-- Link your JavaScript file -->
+</body>
+</html>

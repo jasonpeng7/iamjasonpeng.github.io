@@ -1,0 +1,19 @@
+h1 {
+    color: darkslategray;
+    text-align: center;
+}
+
+div {
+    background-color: orange;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    margin: 20px;
+}
+
+h5 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    border: 3px dotted black
+}

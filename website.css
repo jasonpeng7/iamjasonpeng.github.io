@@ -1,0 +1,1213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(249, 252, 255);
+    margin: 0;
+    padding:0;
+    min-height: 100vh;
+    overflow:hidden;
+ }
+
+ #intro-page::before{
+    content:'';
+    position: absolute;
+    display: block;
+    z-index: 0;
+    background: repeating-linear-gradient(-45deg,rgba(147, 175, 203, 0.395) 0px,rgba(147, 175, 203, 0.395) 4px,rgba(147, 175, 203, 0.395) 4px,rgba(147, 175, 203, 0.395) 12px);
+    clip-path: polygon(
+        0 0,           /* Top-left corner */
+        100% 0,        /* Top-right corner */
+        100% 100%,     /* Bottom-right corner */
+        0 100%,        /* Bottom-left corner */
+        0 53%,         /* Start creating the clipped section */
+        23.5% 53%,       /* Adjust the right side of the clipped section */
+        23.5% 0,         /* Move vertically up */
+        0 0            /* Close the path */
+    );
+    width: 65%;
+    height: 40%;
+    background-size: 100% 100%;
+    top: 23%;
+    left: 31%;
+    animation: fadeIn 0.5s ease-out 3s forwards;
+    opacity: 0;
+
+} 
+
+.inner_container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(185, 195, 221, 0.322);
+    margin: 20px;
+    padding: 30px;
+    min-width: calc(100%-30px);
+    min-height: calc(100vh - 40px);
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    height: 80vh;
+    width: 100%;
+}
+
+.portrait, #left-eye, #right-eye, #face2, #face{
+    animation: popOut 0.7s ease-out forwards;
+    animation-delay: 2s;
+    opacity: 0;
+}
+
+#left-eyebrow, #right-eyebrow, #mouth{
+    animation: fadeIn 0.7s ease-out forwards;
+    animation-delay: 2s;
+    opacity: 0;
+}
+
+.portrait{
+    width: 40%;
+    position: absolute;
+    right: 11.5%;
+    background-color: transparent;
+    text-align: center;
+    top: -2%;
+}
+
+#left-eye{
+    position: absolute;
+}
+
+#right-eye{
+    position: absolute;
+}
+
+#face2{
+    position: absolute;
+    right: 15%;
+    width: 20%;
+    height: 20%;
+    top: 30%;
+}
+
+#face{
+    position: absolute;
+    right: 24.2%;
+    width: 8.5%;
+    top: 34%;
+    z-index:1;
+}
+
+#left-eyebrow{
+  position: absolute;
+  width: 20%; 
+  height: 20%;
+  top: 27.5%;
+  right: 23%;
+}
+
+#right-eyebrow{
+    position: absolute;
+    width: 20%; 
+    height: 20%;
+    top: 27.5%;
+    right: 15.5%;
+}
+
+#mouth{
+    position: absolute;
+    width: 100%;
+    top: -10%;
+    right: -22%;
+    height: 100%;
+}
+
+.hide{
+    display: none;
+}
+
+.loading_overlay{
+    position: fixed;
+    top: 2.4%;
+    left: 1.3%;
+    min-width: calc(100%-30px);
+    width: 97.5%;
+    height: 95.2%;
+    background-color: #ece8fc;
+    z-index: 9999;
+    display: none;
+    flex-wrap: wrap;
+    align-content: center;
+    animation: l1 1s ease-out;
+}
+
+
+@keyframes l1{
+    to { opacity: 1; }
+}
+
+
+
+.loading_overlay::before,
+.loading_overlay::after{
+    content: '';
+    width: 94.5%;
+    height: 47%;
+    position: fixed;
+    background-color: rgb(147, 175, 203);
+}
+
+.loader {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    --c:no-repeat linear-gradient(rgb(0,21,67) 0 0);
+    background: var(--c),var(--c),var(--c),var(--c);
+    background-size: 21px 21px;
+    animation: l5 1.5s infinite cubic-bezier(0.3,1,0,1);
+    z-index: 9999;
+    left: 47.5%;
+    top: 46.5%;
+}
+
+@keyframes l5 {
+   0%   {background-position: 0    0,100% 0   ,100% 100%,0 100%}
+   33%  {background-position: 0    0,100% 0   ,100% 100%,0 100%;width:60px;height: 60px}
+   66%  {background-position: 100% 0,100% 100%,0    100%,0 0   ;width:60px;height: 60px}
+   100% {background-position: 100% 0,100% 100%,0    100%,0 0   }
+}
+
+.loading_overlay::before{
+    top: 5%;
+    left: 2.7%;
+    animation: slideDown 1s forwards;
+}
+
+.loading_overlay::after{
+    bottom: 5%;
+    left: 2.7%;
+    animation: slideUp 1s forwards;
+}
+
+/* Animation to separate the containers (reverse of coming together) */
+.loading_overlay.separate::before {
+    top: 5%;
+    left: 2.7%;
+    animation: slideBackUp 0.3s forwards; /* Reverse slide back up */
+    animation-delay: 0.2s;
+}
+
+.loading_overlay.separate::after {
+    bottom: 5%;
+    left: 2.7%;
+    animation: slideBackDown 0.3s forwards; /* Reverse slide back down */
+    animation-delay: 0.2s;
+}
+
+/* Reverse top container animation */
+@keyframes slideBackUp {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-111%);
+    }
+}
+
+/* Reverse bottom container animation */
+@keyframes slideBackDown {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(111%);
+    }
+}
+
+@keyframes slideDown{
+   0%{
+    transform: translateY(-100%);
+   } 
+
+   100%{
+    transform: translateY(0);
+   }
+}
+
+@keyframes slideUp{
+    0%{
+        transform: translateY(100%);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+/* .navigationbar{
+    overflow: hidden;
+    background-color:rgb(111, 121, 133);
+    position: absolute;
+    width: 100%;
+    top:0;
+    left: 0;
+}
+
+.navigationbar a{
+    float: right;
+    font-size: 16px;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+} */
+
+            
+.image-change{
+    padding: 0;
+    display: flex;
+    /* display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;  */
+}
+
+.folder-image{
+    fill: rgb(0,21,67); /* No fill color */
+    stroke: rgb(0,21,67); /* Border color */
+    stroke-width: 0.05; /* Thickness of the border */
+    width: 500px; /* Adjust the size if needed */
+    height: 500px; /* Adjust the size if needed */
+    position: absolute;
+    display: block;
+    justify-content: center;
+    bottom: 85px;
+    right: 100px;
+    opacity: 1;
+    z-index: 3;
+}
+
+.hover-image{
+    fill: rgb(0,21,67);
+    stroke: rgb(167, 199, 231); /* Border color */
+    stroke-width: 1.5; /* Thickness of the border */
+    width: 500px; /* Adjust the size if needed */
+    height: 500px; /* Adjust the size if needed */
+    position: absolute;
+    justify-content: center;
+    bottom: 85px;
+    right: 100px;
+    opacity: 0;
+    z-index: 3;
+}
+
+.image-change:hover .folder-image{
+    opacity: 0;
+}
+
+.image-change:hover .hover-image{
+    opacity: 1;
+}
+
+#folder-icon{
+    position: absolute;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+}
+
+
+#intro-text{
+    font-size: 70px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.modal {
+    position:relative;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+
+}
+
+/* Modal Content */
+.modal-content {
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ece8fc;
+    min-width: calc(100%-30px);
+    width: 97.3%;
+    height: 95.5%;
+    padding: 30px;
+    top: 2.41%;
+    left: 1.4%
+}
+
+.modal-content button{
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    align-items: center;
+    display: inline-flex;
+    font-size: 35px;
+    margin: 10px 0; /* Space between buttons */
+    cursor: pointer;
+}
+
+#modal-button1.modal-buttons{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+}
+
+#modal-button2.modal-buttons{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
+    color: rgb(0,0,0);
+}
+
+#modal-button3.modal-buttons{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
+    color: rgb(0,0,0);
+}
+
+#modal-button4.modal-buttons{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
+    color: rgb(0,0,0);
+}
+
+.svgmodal-break{
+    color: rgb(147, 175, 203);
+}
+
+@keyframes verticalmodal-content-slide-left{
+    from{
+        transform: translateX(200%);
+    }
+    to{
+        transform:translateX(0);
+    }
+}
+
+#modal-button1{
+    width: 17%;
+    position: absolute;
+    height: 7%;
+    left: 1%;
+    top: 37%;
+    background-color: transparent;
+    animation: modalslide 1s ease-in forwards;
+    opacity: 0;
+}
+
+#modal-button2{
+    width: 13%;
+    position: absolute;
+    height: 7%;
+    left: 1%;
+    top: 67%;
+    background-color: transparent;
+    animation: modalslide 1s ease-in forwards;
+    animation-delay: 0.1s;
+    opacity: 0;
+}
+
+#modal-button3{
+    width: 13%;
+    position: absolute;
+    height: 7%;
+    left: 1%;
+    top: 82%;
+    background-color: transparent;
+    animation: modalslide 1s ease-in forwards;
+    animation-delay: 0.2s;
+    opacity: 0;
+}
+
+#modal-button4{
+    display: inline-flex;
+    position: absolute;
+    height: 7%;
+    left: 1%;
+    top: 52%;
+    background-color: transparent;
+    animation: modalslide 0.9s ease-in forwards;
+    animation-delay: 0.2s;
+    opacity: 0;
+}
+
+#modal-button1:hover{
+    background-color: rgba(213, 206, 213, 0.558);
+    width: 80%
+}
+#modal-button2:hover{
+    background-color: rgba(213, 206, 213, 0.558);
+    width: 60%;
+}
+#modal-button3:hover{
+    background-color: rgba(213, 206, 213, 0.558);
+    width: 100%
+}
+
+#modal-button4:hover{
+    background-color: rgba(213, 206, 213, 0.558);
+    width: 25%
+}
+
+
+
+#purple-logo{
+    position: absolute;
+    width: 4.7%;
+    top: 0.8%;
+    left: 1%;
+    margin: 1%;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.modal-button-content1, .modal-button-content2, .modal-button-content3, .modal-button-content4{
+    animation: fadeIn 1s ease-in forwards;
+    animation-delay: 1s; 
+    opacity: 0;
+}
+.modal-button-content1{
+    position: absolute;
+    top: 40.5%;
+    left: 19.5%;
+
+}
+
+.modal-button-content2{
+    position: absolute;
+    top: 70.5%;
+    left: 16%;
+
+}
+
+.modal-button-content3{
+    position: absolute;
+    top: 85.5%;
+    left: 15.5%;
+
+}
+
+.modal-button-content4{
+    position: absolute;
+    top: 55.5%;
+    left: 18%;
+
+}
+
+@keyframes modalslide{
+    0%{
+        opacity: 0;
+        transform: translateY(500%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#about-me{
+    position: relative;
+    margin: -30px;
+    height: 100vh;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.about-me-content{
+    font-family: Frank Ruhl Libre, serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    color:rgb(0, 21, 67);
+    position: absolute;
+    left: 3.2%;
+    width: 75%;
+}
+
+#typewriter {
+    position: absolute;
+    overflow: hidden; /* Prevent the text from causing any layout shifts */
+    white-space: nowrap; /* Keep the text on one line */
+    display: inline-flex;
+    font-size: 83px;
+    font-weight: 400;
+    flex-wrap: wrap;
+    font-family: Frank Ruhl Libre, serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color:rgb(0, 21, 67);
+    top: 25.3%;
+    left: 3.2%;
+    z-index: 2;
+}
+
+#cursor {
+    position: absolute;
+    color: rgb(185, 195, 221, 0.322) /* Cursor color */
+}
+
+#section1, #section2, #section3{
+    position: relative;
+    width: 1400px;
+}
+
+.back-to-top{
+    top:20px;
+    right:20px;
+    width: 20px;
+    position: fixed;
+    display: none;
+    cursor:pointer;
+    background-color: transparent;
+} 
+
+.back-to-top:hover{
+    background-color: beige;
+}
+
+#myBtn{
+    position: fixed;
+    top:0; left:0;
+    z-index: 3;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-left: 50px;
+    width: 65px;
+}
+
+#portrait-image{
+    position: absolute;
+    bottom: 20%;
+}
+
+#section1::before {
+    content:'';
+    position: absolute;
+    display: block;
+    width: 30%;
+    height: 85%; /* Customizable height */
+    background: repeating-linear-gradient(-45deg,rgba(147, 175, 203, 0.395) 0px,rgba(147, 175, 203, 0.395) 4px,rgba(147, 175, 203, 0.395) 4px,rgba(147, 175, 203, 0.395) 12px);
+    background-size: 100% 100%;
+    z-index: 0; /* Ensure the background is behind the content */
+    bottom: 7%;
+    left: 10%;
+}
+
+.section1-divider{
+    width: 25%
+    
+}
+
+/* #project-link1, #project-link2, #project-link3{
+    position: absolute;
+    right: 20%;
+    width: 10%;
+    cursor:pointer;
+} */
+
+.section2-content{
+    line-height:1.6; 
+    width:100%; 
+    left: 39%;
+    text-align: left;
+    position: absolute;
+    font-size: 15px; 
+    padding: 20px;
+    z-index: 2;
+}
+
+.section2-content-content{
+    position: absolute;
+    width: 55%;
+    text-align: left;
+    padding:20px;
+    left:39%;
+    line-height: 2;
+    font-size: 18px;
+    z-index: 2;
+}
+
+#frank-ruhl-libre-regular {
+font-family: "Frank Ruhl Libre", serif;
+font-optical-sizing: auto;
+font-weight: 300;
+font-style: normal;
+color:rgb(0, 21, 67);
+}
+
+.red-hat-display-regular {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }  
+
+.red-hat-display-regular-svg-modal {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }  
+
+#raleway-regular {
+font-family: "Raleway", sans-serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+color: rgb(0,21,67);
+}
+
+#section2-sgv-strokecolor{
+    stroke: rgb(167, 199, 231);
+    fill: rgb(167, 199, 231);
+    z-index: 2;
+}
+
+
+#edge{
+    fill:none;
+    stroke-width: 0.05; 
+    stroke: rgb(0,21,67); 
+    position:absolute; 
+    top: 50px; 
+    right: 50px; 
+    width: 500px; 
+    transform:scaleX(-1); 
+    transform-origin: center;
+}
+
+
+.hidden {
+    opacity: 0;
+    transition: all 1.5s;
+    transform: translateX(-100%);
+    filter: blur(5px);
+    background-color: transparent;
+    width: 25%;
+    font-size: 17px;
+}
+
+.hidden-right{
+    opacity: 0;
+    transition: all 1.5s;
+    transform: translateX(100%);
+    filter: blur(5px);
+    background-color: transparent;
+    width: 25%;
+    font-size: 17px;
+}
+
+.hidden2{
+    transition: all 1s; 
+    filter: none; 
+    transform: translateY(-100px);  
+    width: 5%; 
+    background-color: transparent; 
+    position: absolute;
+    left: 47.5%;
+    opacity: 0;
+    filter: blur(5px);
+}
+
+
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
+    filter:blur(0);
+}
+
+.show-right{
+    opacity: 1;
+    transform: translateX(0);
+    filter:blur(0);
+}
+
+.show-2{
+    opacity: 1;
+    transform: translateX(0);
+    filter:blur(0);
+}
+
+
+section{
+    display: grid;
+    text-align: right;
+    align-content: center;
+    background-color: transparent;
+    position: relative;
+    font-size: 12px;
+    color: rgb(0, 21, 67);
+    }
+
+.parallax-wrapper{
+    position: relative;
+    top: 8%;
+    left: 1.5%;
+    width: 80%;
+    height: 20%;
+    overflow:hidden;
+    background-color: transparent;
+}
+
+.background{
+    position: absolute;
+    top: -30%;
+    left: 100%;
+    width: 12%;
+    height: 12%;
+    animation: moveBackground 45s linear infinite; 
+}
+
+.background-cloud2{
+    position: absolute;
+    left: 140%;
+    width: 12%;
+    height: 12%;
+    animation: moveBackground-cloud2 65s linear infinite; 
+}
+
+.background-cloud3{
+    position: absolute;
+    left: 120%;
+    top: -30%;
+    width: 12%;
+    height: 12%;
+    animation: moveBackground-cloud3 65s linear infinite; 
+}
+
+.background-cloud4{
+    position: absolute;
+    left: 160%;
+    top: -20%;
+    width: 12%;
+    height: 12%;
+    animation: moveBackground-cloud4 65s linear infinite; 
+}
+
+@keyframes moveBackground-cloud3 {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-1500%);
+    }
+}
+
+@keyframes moveBackground-cloud4 {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-1500%);
+    }
+}
+
+.foreground-tree1{
+    position: absolute;
+    left: 100%;
+    top: 8.8%;
+    width: 12%;
+    height: 10%; /* Example for a road */
+    animation: moveForeground 15s linear infinite;
+    z-index: 9;
+    /* background-color: rgba(0, 255, 255, 0.456); */
+}
+
+.foreground-tree2{
+    position: absolute;
+    left: 130%;
+    top: 16.3%;
+    width: 11%;
+    height: 8%; /* Example for a road */
+    animation: moveForeground-tree2 16s linear infinite;
+    z-index: 8;
+    /* background-color: rgba(0, 0, 255, 0.42); */
+}
+
+.foreground-tree3{
+    position: absolute;
+    left: 104%;
+    top: 24.3%;
+    width: 10%;
+    height: 6%; /* Example for a road */
+    animation: moveForeground-tree3 15s linear infinite;
+    z-index: 8;
+    /* background-color: rgba(226, 189, 43, 0.403); */
+}
+
+.foreground-tree4{
+    position: absolute;
+    left: 190%;
+    top: -31%;
+    width: 15%;
+    height: 17%; /* Example for a road */
+    animation: moveForeground-tree4 20s linear infinite;
+    z-index: 8;
+    /* background-color: rgba(255, 228, 196, 0.468); */
+}
+
+
+@keyframes carline-move{
+    0%{
+        transform: translateX(0)
+    }
+    50%{
+        transform: translateX(15%)
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+/* .foreground-rock{
+    position: absolute;
+    left: 120%;
+    top: 87%;
+    width: 2%;
+    height: 2%;
+    animation: moveForeground-rock 10s linear infinite;
+    z-index: 8;
+} */
+
+.foreground-road{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    top: -700%;
+    z-index: 9;
+}
+
+.car {
+    position: absolute;
+    top: 14.5%;
+    width: 14%;
+    left: 30%;
+    fill: rgb(0, 21, 67);
+    z-index:10;
+    animation: car-bump 1.8s infinite ease-in;
+}
+
+.wagon{
+    position: absolute;
+    top: 29.5%;
+    width: 14%;
+    left: 23%;
+    fill: rgb(0, 21, 67);
+    z-index:9;
+    animation: car-bump 2s infinite ease-in;
+}
+
+.car-line1{
+    position: absolute;
+    top: 70%;
+    left: 18%;
+    width: 3%;
+    height: 3%;
+    background-color: rgba(0, 0, 0, 0.53);
+    z-index: 7;
+    animation: car-bump 1s infinite ease-in, carline-move 1.5s ease-in-out infinite;
+}
+
+.car-line2{
+    position: absolute;
+    top: 63%;
+    left: 17%;
+    width: 3%;
+    height: 3%;
+    background-color: rgba(0, 0, 0, 0.53);
+    z-index: 7;
+    animation: car-bump 1s infinite ease-in, carline-move 3s ease-in-out infinite;
+}
+
+.sun{
+    position: absolute;
+    width: 23%;
+    top: -38%;
+    left: 50%;
+    animation: moveSun 60s linear infinite;
+}
+
+@keyframes car-bump{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-1.2px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes bump{
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-1200%);
+    }
+}
+
+/* Keyframes for foreground (faster movement) */
+@keyframes moveForeground {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-1330%);
+    }
+    
+}
+
+@keyframes moveForeground-tree2{
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-1500%);
+    }
+}
+
+@keyframes moveForeground-tree3{
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-1600%);
+    }
+}
+
+@keyframes moveForeground-tree4{
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-1400%);
+    }
+}
+
+@keyframes moveForeground-tree5{
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-1450%);
+    }
+}
+
+@keyframes moveForeground-tree6{
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-2200%);
+    }
+}
+
+@keyframes moveSun{
+    from {
+        transform: translateX(0) translateY(0);
+    }
+    to {
+        transform: translateX(-275%) translateY(30%);
+    }
+}
+
+
+
+@keyframes moveRoad{
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-1000%);
+    }
+}
+
+@keyframes moveBackground {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-1100%);
+    }
+}
+
+
+@keyframes moveBackground-cloud2 {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-1500%);
+    }
+}
+
+
+@keyframes moveForeground-rock {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-6000%);
+    }
+      
+}
+
+@keyframes slideupSVGcontainer {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-111%);
+    }
+}
+
+.fade{
+    animation: slideupSVGcontainer 1s forwards
+}
+
+.linkedin-icon, .instagram-icon, .mail-icon, .resume-icon{
+    cursor: pointer;
+    width: 4%;
+    position: absolute;
+    bottom: 10%;
+    text-align: center;
+    z-index: 2;
+    animation: fadeIn 1s ease-in-out forwards;
+    opacity: 0;
+}
+
+.linkedin-icon{
+    right: 14%;
+    animation-delay: 2s;
+}
+
+.instagram-icon{
+    right: 9.8%;
+    animation-delay: 2.5s;
+}
+
+.mail-icon{
+    right: 5.5%;    
+    animation-delay: 3s;
+}
+
+.resume-icon{
+    right: 1.5%;
+    animation-delay: 3.5s;
+}
+
+.vertical-modal-content1{
+    position: absolute;
+    width: 0.2%;
+    background-color: rgba(147, 175, 203, 0.366);
+    right: 4.3%;
+    animation: verticalmodal-content-slide-left 2s ease-in-out;
+    animation-duration: 1.5s;
+}
+
+a{
+    color: inherit;
+}
+
+a:visited{
+    color: inherit;
+}
+
+a:hover{
+    color: rgba(0, 0, 0, 0.35);
+}
+
+#bound{
+    position: absolute;
+    min-width: 10%;
+    height: 2%;
+    top: 36.2%;
+    right: 23%;
+}
+
+.skateboard{
+    position: absolute;
+    top: 50%;
+    width: 6%;
+    left: 30%;
+    z-index: 10;
+}
+
+@keyframes popOut {
+    0% {
+      transform: scale(0);  /* Start from nothing */
+      opacity: 0;  /* Fully invisible */
+    }
+    60% {
+      transform: scale(1.2);  /* Slightly overscale */
+      opacity: 1;  /* Fully visible */
+    }
+    100% {
+      transform: scale(1);  /* Normal scale */
+      opacity: 1;  /* Fully visible */
+    }
+  }
+
+.please-scroll{
+    animation: fadeIn 1s ease-out forwards, jump 2s infinite;
+    animation-delay: 4s, 5s;
+    opacity: 0;
+}
+
+@keyframes jump{
+    0%, 100%{
+        transform: translateY(0)
+    }
+    50%{
+        transform: translateY(10%);
+    }
+}
+
+.linkedin-icon2, .instagram-icon2, .mail-icon2, .resume-icon2{
+    position: absolute;
+    width: 2%;
+    height: 16%;
+    display: flex;
+    top: 80%;
+}

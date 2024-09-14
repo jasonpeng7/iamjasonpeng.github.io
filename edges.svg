@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 20 25" x="0px" y="0px" xmlns="http://www.w3.org/2000/svg">
+  <defs/>
+  <path d="M 160.1 279.9 L 165 279.9 L 165 280 L 160 280 L 160 275 L 160.1 275 L 160.1 279.9 Z M 179.9 260.1 L 175 260.1 L 175 260 L 180 260 L 180 265 L 179.9 265 L 179.9 260.1 Z" transform="translate(-160 -260)" style="fill: rgb(165, 73, 184);"/>
+  <text x="0" y="40" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif" style="white-space: pre;"> </text>
+</svg>

@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(249, 252, 255);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.inner_container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(149, 161, 195, 0.246);
+    margin: 20px;
+    padding: 40px;
+    width: 90%; /* Change to a percentage for responsiveness */
+    min-width: calc(100%-30px);
+    max-width: 1400px; /* Maximum width for larger screens */
+    min-height: calc(100vh - 60px); /* Adjust for padding/margin */
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#message-icon {
+    position: absolute;
+    right: 70px;
+    top: 0;
+    transform: scaleX(-1);
+}
+
+.contact {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    display: inline-block;
+    position: absolute;
+
+    padding: 7px 15px 7px 28px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Full width */
+    min-height: 100vh; /* Full viewport height */
+}
+
+.folder {
+    fill: none; /* No fill color */
+    stroke: black; /* Border color */
+    stroke-width: 2; /* Thickness of the border */
+    width: 100px; /* Adjust the size for responsiveness */
+    height: 100px; /* Adjust the size for responsiveness */
+    position: absolute;
+    justify-content: center;
+    display: flex;
+}
+
+#folder-icon {
+    width: 50px; /* Adjust for responsiveness */
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#introduction {
+    position: absolute;
+    display: inline-block;
+    top: 35%;
+    left: 50%;
+}
+
+#intro-text {
+    font-size: 3vw; /* Responsive font size */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sticky-container {
+    position: sticky;
+    top: 0;
+    right: 0;
+    margin: 10px;
+}
+
