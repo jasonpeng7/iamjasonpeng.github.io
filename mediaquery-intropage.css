@@ -173,13 +173,13 @@
 
     .name-is{
         font-size: 45px;
-        top:450px;
+        top:435px;
         left: 30px;
     }
 
     .hi-my{
         font-size: 45px;
-        top: 400px;
+        top: 385px;
         left: 30px;
     }
 
@@ -188,19 +188,19 @@
     }
 
     #animation-hard-up{
-        top: 520px;
+        top: 505px;
         width: 40%;
         left: 30px;
     }
 
     .inner_container{
-        background-color: rgb(127, 183, 97);
+        background-color: rgb(183, 177, 97);
     }
 
     #intro-page::before {
         width: 80vw; /* Adjust the width to make it shorter */
         height: 40vh; /* You can also adjust the height accordingly */
-        top: 10%;
+        top: 11.5%;
         left: 10vw; /* Adjust the positioning if needed */
     }
 
