@@ -157,7 +157,7 @@
 
 @media (max-width: 480px) {
 
-    .portrait{
+    .portrait, #left-eye, #right-eye, #left-eyebrow, #right-eyebrow, #face2, #face, #mouth{
         display: none;
     }
     .portrait2 svg{
@@ -167,13 +167,13 @@
 
     .portrait2{
         top: 15%;
-        left: 0;
+        left: -30%;
         display: block;
     }
 
     .animation-slide-up{
         top: 20%;
-        left: 5%;
+        left: 65%;
     }
 
     .name-is{
@@ -190,17 +190,17 @@
     }
 
     .animation-slide-down{
-        left: 5%;
-        top: 15%;
+        left: 15%;
+        top: 60%;
     }
 
     .passionate{
         font-size: 13px;
     }
 
-    .animation-hard-up{
-        left: 5%;
-        top: 24%;
+    #animation-hard-up{
+        left: 15%;
+        top: 70%;
     }
 
     .inner_container{
