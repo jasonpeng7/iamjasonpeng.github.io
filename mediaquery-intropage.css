@@ -169,6 +169,8 @@
         top: 13%;
         left: -40%;
         display: block;
+        animation: fadeIn 1s ease-out forwards;
+        animation-delay: 2s
     }
 
     .name-is{
@@ -194,7 +196,7 @@
     }
 
     .inner_container{
-        background-color: rgb(97, 147, 183);
+        background-color: rgb(97, 183, 182);
     }
 
     #intro-page::before {
