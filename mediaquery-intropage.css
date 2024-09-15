@@ -166,37 +166,37 @@
     }
 
     .portrait2{
-        top: 20%;
+        top: 13%;
         left: -40%;
         display: block;
     }
 
     .name-is{
         font-size: 45px;
-        top:525px;
+        top:450px;
     }
 
     .hi-my{
         font-size: 45px;
-        top: 450px;
+        top: 400px;
     }
 
     .passionate{
         font-size: 13px;
-
     }
 
     #animation-hard-up{
-        top: 525px;
+        top: 500px;
+        width: 40%
     }
 
     .inner_container{
-        background-color: rgb(97, 183, 120);
+        background-color: rgb(106, 97, 183);
     }
 
     #intro-page::before {
-        width: 30vw; /* Adjust the width to make it shorter */
-        height: 15vh; /* You can also adjust the height accordingly */
+        width: 80vw; /* Adjust the width to make it shorter */
+        height: 40vh; /* You can also adjust the height accordingly */
         top: 10%;
         left: 25%; /* Adjust the positioning if needed */
     }
