@@ -194,7 +194,7 @@
     }
 
     .inner_container{
-        background-color: rgb(97, 172, 183);
+        background-color: rgb(127, 183, 97);
     }
 
     #intro-page::before {
@@ -202,6 +202,20 @@
         height: 40vh; /* You can also adjust the height accordingly */
         top: 10%;
         left: 10vw; /* Adjust the positioning if needed */
+    }
+
+    .scroll-down{
+        right: 10%;
+        bottom: 15%;
+    }
+
+    .please-sroll{
+        font-size: 10px;
+    }
+
+    .please-scroll-line{
+        min-height: 29%;
+        right: 10%;
     }
 }
 

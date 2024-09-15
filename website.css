@@ -1291,3 +1291,22 @@ a:hover{
     text-align: center;
     top: 10%;
 }
+
+.please-scroll{
+    writing-mode: vertical-rl; 
+    text-orientation: upright; 
+    font-size: 13px; 
+    color: rgb(0, 21, 67)
+}
+
+.please-scroll-line{
+    position: absolute; 
+    background-color: rgb(0, 21, 67); 
+    min-width: 0.15%; 
+    min-height: 12%; 
+    bottom: 26%; 
+    left: 20.5%;
+    animation: fadeIn 1s ease-out forwards, jump 2s infinite;
+    animation-delay: 4s, 5s;
+    opacity: 0;
+}
