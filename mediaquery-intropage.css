@@ -170,7 +170,7 @@
         left: -40%;
         display: block;
         animation: fadeIn 1s ease-out forwards;
-        animation-delay: 2s;
+        animation-delay: 2.5s;
         opacity: 0;
     }
 
