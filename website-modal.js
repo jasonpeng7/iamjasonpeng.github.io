@@ -362,21 +362,3 @@ function typeWriter() {
 
 typeWriter();
 
-function updateStyles() {
-    const height = window.innerHeight;
-    const width = window.innerWidth;
-    
-    const heightOffset = Math.max(0, (750 - height) / 40);
-    const widthOffset = Math.max(0, (1400 - width) / 60);
-  
-    document.getElementById('face2').style.right = `calc(15% + ${widthOffset}%)`;
-    document.getElementById('left-eyebrow').style.right = `calc(23% + ${widthOffset * 0.5}%)`;
-    document.getElementById('right-eyebrow').style.right = `calc(15.5% + ${widthOffset}%)`;
-    document.querySelector('.mouth-container').style.left = `calc(17% - ${widthOffset * 0.5}%)`;
-  }
-  
-  // Call the function on resize
-  window.addEventListener('resize', updateStyles);
-  
-  // Call the function once to apply the styles initially
-  updateStyles();

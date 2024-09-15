@@ -291,3 +291,65 @@
         overflow: auto;
     }
 }
+
+@media (max-width: 480) {
+    .modal-button-content1 {
+        top: 41%;  /* Adjust the position dynamically */
+        left: 45%; /* Adjust the left margin for smaller screens */
+        max-width: 2vw;
+        font-size: 65%;
+
+    }
+    .modal-button-content2 {
+        top: 71%;  /* Adjust the position dynamically */
+        left: 37.5%; /* Adjust the left margin for smaller screens */
+        max-width: 2vw;
+        font-size: 65%;
+
+
+    }
+    .modal-button-content3 {
+        top: 86%;  /* Adjust the position dynamically */
+        left: 38%; /* Adjust the left margin for smaller screens */
+        min-width: 10vw;
+        font-size: 65%;
+
+
+    }
+    .modal-button-content4 {
+        top: 56%;  /* Adjust the position dynamically */
+        left: 43%; /* Adjust the left margin for smaller screens */
+        min-width: 20vw;
+        font-size: 65%;
+    }
+
+    #modal-button1.modal-buttons{
+        font-size: 18px;
+    }
+    #modal-button2.modal-buttons{
+        font-size: 18px;
+
+    }
+    #modal-button3.modal-buttons{
+        font-size: 18px;
+
+    }
+    #modal-button4.modal-buttons{
+        font-size: 18px;
+
+    }
+    .foreground-road{
+        left: 9.5%;
+        width: 71%;
+    }
+
+    .modal{
+        overflow: auto;
+    }
+
+    dotlottie-player{
+        top: 20%;
+    }
+
+
+}
