@@ -27,11 +27,11 @@
         font-size: 45px;
         max-width: 20%;
         left: 30px;
-        top: 25%;
+        top: 19%;
     }
 
     .inner_container{
-        background-color: rgb(92, 140, 75);
+        background-color: rgb(75, 109, 140);
     }
 
     .about-me-content1{
@@ -45,7 +45,7 @@
         font-size: 13px;
         left: 30px;
         width: 40%;
-        top: 58%;
+        top: 48%;
     }
 
     #frank-ruhl-libre-regular-iam{
