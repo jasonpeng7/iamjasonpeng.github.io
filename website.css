@@ -1237,43 +1237,56 @@ a:hover{
     top: 80%;
 }
 
-.jason{
-    font-size: 90px;
-    font-weight: 800;
-    display: inline-block; 
-    left: 370px; 
-    position: absolute; 
-    top: 215px;
-}
-
 .name-is{
     font-size: 90px;
-    font-weight: 400;
+    font-weight: 450;
     display: inline-block; 
-    left: 45px;
+    left: 5%;
     position: absolute;
-    top: 215px;
+    top: 225px;
+
+    font-family: "Frank Ruhl Libre", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color:rgb(0, 21, 67);
 }
 
 .hi-my{
     font-size: 90px;
-    font-weight: 400;
+    font-weight: 450;
     display: inline-block; 
-    left: 45px; 
+    left: 5%;
     position: absolute; 
     top: 130px;
+
+    font-family: "Frank Ruhl Libre", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color:rgb(0, 21, 67);
 }
 
-.animation-hard-up{
+#animation-hard-up{
     position: absolute; 
-    top:340px; 
-    left: 50px; 
-    width: 380px; 
-
+    left: 5%;
+    top: 350px;
+    width: 25%;
 }
 
 .passionate{
-    font-weight: 400; 
     font-size: 25px; 
     line-height: 1.2;
+
+    font-family: "Frank Ruhl Libre", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color:rgb(0, 21, 67);
+    font-weight: 300;
+}
+
+.portrait2{
+    display: none;
+    width: 100vw; /* Use viewport width for responsiveness */
+    position: relative;
+    text-align: center;
+    top: 10%;
 }

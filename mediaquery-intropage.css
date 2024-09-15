@@ -156,14 +156,19 @@
 
 
 @media (max-width: 480px) {
-    .portrait svg{
+
+    .portrait{
+        display: none;
+    }
+    .portrait2 svg{
         width: 35vh;
         height: 35vh;
     }
 
-    .portrait{
+    .portrait2{
         top: 15%;
         left: 0;
+        display: block;
     }
 
     .animation-slide-up{
