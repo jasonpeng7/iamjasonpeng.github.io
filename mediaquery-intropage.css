@@ -166,25 +166,32 @@
     }
 
     .portrait2{
-        top: 15%;
+        top: 23%;
         left: -40%;
         display: block;
     }
 
     .name-is{
         font-size: 45px;
+        top:550px;
     }
 
     .hi-my{
         font-size: 45px;
+        top: 250px;
     }
 
     .passionate{
         font-size: 13px;
+
+    }
+
+    #animation-hard-up{
+        top: 700px;
     }
 
     .inner_container{
-        background-color: rgb(121, 255, 195);
+        background-color: rgb(152, 183, 97);
     }
 }
 
