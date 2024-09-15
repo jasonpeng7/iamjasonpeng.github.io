@@ -321,6 +321,7 @@
         width: 10%;
         top: 5%;
         left: 0;
+        position: absolute;
     }
 
     .foreground-tree1, .foreground-tree2, .foreground-tree3, .foreground-tree4{
