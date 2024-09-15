@@ -173,13 +173,13 @@
 
     .name-is{
         font-size: 45px;
-        top:440px;
+        top:450px;
         left: 30px;
     }
 
     .hi-my{
         font-size: 45px;
-        top: 390px;
+        top: 400px;
         left: 30px;
     }
 
@@ -188,13 +188,13 @@
     }
 
     #animation-hard-up{
-        top: 510px;
+        top: 520px;
         width: 40%;
         left: 30px;
     }
 
     .inner_container{
-        background-color: rgb(183, 97, 163);
+        background-color: rgb(97, 97, 183);
     }
 
     #intro-page::before {
@@ -209,13 +209,13 @@
         bottom: 18%;
     }
 
-    .please-sroll{
+    .please-scroll{
         font-size: 8px;
     }
 
     .please-scroll-line{
-        min-height: 18%;
-        min-width: 0.15%;
+        max-height: 18%;
+        max-width: 0.15%;
         right: 10%;
     }
 }
