@@ -109,28 +109,10 @@ const eyeRadius = 15; // Radius of the eye
 const maxMovementX = 8; // Maximum movement range horizontally
 const maxMovementY = 1.2; // Maximum movement range vertically
 
-// Minimum and maximum boundaries for eye movement
-const leftEyeBounds = {
-    minX: -79, // Minimum X position for the left eye
-    maxX: -59, // Maximum X position for the left eye
-    minY: 78,  // Minimum Y position for the left eye
-    maxY: 95   // Maximum Y position for the left eye
-};
-
-const rightEyeBounds = {
-    minX: 265, // Minimum X position for the right eye
-    maxX: 285, // Maximum X position for the right eye
-    minY: 78,  // Minimum Y position for the right eye
-    maxY: 95   // Maximum Y position for the right eye
-};
-
-// Store previous eye positions
-let leftEyePos = { x: -67, y: 80 };
-let rightEyePos = { x: 276, y: 80 };
-
 // Function to update eye positions
 function updateEyePosition(x, y) {
-    const faceRect = document.getElementById('face').getBoundingClientRect();
+    const face = document.getElementById('face');
+    const faceRect = face.getBoundingClientRect();
     const faceCenterX = faceRect.left + faceRect.width / 2;
     const faceCenterY = faceRect.top + faceRect.height / 2;
 
@@ -138,30 +120,27 @@ function updateEyePosition(x, y) {
     const moveX = ((x - faceCenterX) / faceRect.width) * maxMovementX;
     const moveY = ((y - faceCenterY) / faceRect.height) * maxMovementY;
 
-    // New target positions (apply constraints for the left eye)
+    // Get SVG viewBox
+    const svg = document.querySelector('.portrait svg');
+    const svgRect = svg.getBoundingClientRect();
+
+    // Adjust eye positions relative to the SVG
     const newLeftEyePos = {
-        x: Math.min(leftEyeBounds.maxX, Math.max(leftEyeBounds.minX, -67 + moveX)),
-        y: Math.min(leftEyeBounds.maxY, Math.max(leftEyeBounds.minY, 80 + moveY))
+        x: Math.min(leftEyeBounds.maxX, Math.max(leftEyeBounds.minX, leftEye.getAttribute('cx') - moveX)),
+        y: Math.min(leftEyeBounds.maxY, Math.max(leftEyeBounds.minY, leftEye.getAttribute('cy') - moveY))
     };
 
-    // New target positions (apply constraints for the right eye)
     const newRightEyePos = {
-        x: Math.min(rightEyeBounds.maxX, Math.max(rightEyeBounds.minX, 276 + moveX)),
-        y: Math.min(rightEyeBounds.maxY, Math.max(rightEyeBounds.minY, 80 + moveY))
+        x: Math.min(rightEyeBounds.maxX, Math.max(rightEyeBounds.minX, rightEye.getAttribute('cx') - moveX)),
+        y: Math.min(rightEyeBounds.maxY, Math.max(rightEyeBounds.minY, rightEye.getAttribute('cy') - moveY))
     };
 
     // Smoothly interpolate to new positions
-    leftEyePos.x += (newLeftEyePos.x - leftEyePos.x) * 0.1; // Adjust the factor for smoother movement
-    leftEyePos.y += (newLeftEyePos.y - leftEyePos.y) * 0.1;
+    leftEye.setAttribute('cx', newLeftEyePos.x);
+    leftEye.setAttribute('cy', newLeftEyePos.y);
 
-    rightEyePos.x += (newRightEyePos.x - rightEyePos.x) * 0.1;
-    rightEyePos.y += (newRightEyePos.y - rightEyePos.y) * 0.1;
-
-    leftEye.setAttribute('cx', leftEyePos.x);
-    leftEye.setAttribute('cy', leftEyePos.y);
-
-    rightEye.setAttribute('cx', rightEyePos.x);
-    rightEye.setAttribute('cy', rightEyePos.y);
+    rightEye.setAttribute('cx', newRightEyePos.x);
+    rightEye.setAttribute('cy', newRightEyePos.y);
 }
 
 // Add mousemove event listener
@@ -260,7 +239,7 @@ let mouthPos = { x: 0, y: 0 }; // Initial mouth position
 
 // Function to update mouth position based on cursor movement
 function updateMouthPosition(x, y) {
-    const faceRect = document.getElementById('face').getBoundingClientRect();
+    const faceRect = document.getElementById('face2').getBoundingClientRect();
     const faceCenterX = faceRect.left + faceRect.width / 2;
     const faceCenterY = faceRect.top + faceRect.height / 2;
 
@@ -284,6 +263,7 @@ function updateMouthPosition(x, y) {
 document.addEventListener('mousemove', (event) => {
     updateMouthPosition(event.clientX, event.clientY);
 });
+
 
 const leftIris = document.getElementById('left-iris');
 const rightIris = document.getElementById('right-iris');
@@ -381,3 +361,22 @@ function typeWriter() {
 }
 
 typeWriter();
+
+function updateStyles() {
+    const height = window.innerHeight;
+    const width = window.innerWidth;
+    
+    const heightOffset = Math.max(0, (750 - height) / 40);
+    const widthOffset = Math.max(0, (1400 - width) / 60);
+  
+    document.getElementById('face2').style.right = `calc(15% + ${widthOffset}%)`;
+    document.getElementById('left-eyebrow').style.right = `calc(23% + ${widthOffset * 0.5}%)`;
+    document.getElementById('right-eyebrow').style.right = `calc(15.5% + ${widthOffset}%)`;
+    document.querySelector('.mouth-container').style.left = `calc(17% - ${widthOffset * 0.5}%)`;
+  }
+  
+  // Call the function on resize
+  window.addEventListener('resize', updateStyles);
+  
+  // Call the function once to apply the styles initially
+  updateStyles();

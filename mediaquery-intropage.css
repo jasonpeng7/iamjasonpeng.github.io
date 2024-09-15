@@ -1,0 +1,160 @@
+@media (max-height: 750px) {
+    #face2 {
+        right: calc(15% + 1%);
+    }
+    #left-eyebrow{
+        right: calc(23% + 1%);
+    }
+
+    #right-eyebrow{
+        right: calc(15.5% + 1%);
+    }
+    .mouth-container{
+        left: calc(17% - 1%);
+    }
+}
+
+@media (max-height: 720px) {
+    #face2 {
+        right: calc(15% + 2%);
+    }
+    #left-eyebrow{
+        right: calc(23% + 1.5%);
+    }
+
+    #right-eyebrow{
+        right: calc(15.5% + 2%);
+    }
+    .mouth-container{
+        left: calc(17% - 1.5%);
+    }
+}
+
+@media (max-height: 680px) {
+    #face2 {
+        right: calc(15% + 3%);
+    }
+    #left-eyebrow{
+        right: calc(23% + 2%);
+    }
+
+    #right-eyebrow{
+        right: calc(15.5% + 3%);
+    }
+    .mouth-container{
+        left: calc(17% - 2%);
+    }
+}
+
+@media (max-height: 640px) {
+    #face2 {
+        right: calc(15% + 4%);
+    }
+    #left-eyebrow{
+        right: calc(23% + 2.5%);
+    }
+
+    #right-eyebrow{
+        right: calc(15.5% + 4%);
+    }
+    .mouth-container{
+        left: calc(17% - 2.5%);
+    }
+}
+
+
+
+
+
+
+/* --------- */
+
+@media (max-width: 1400px) {
+    #face2 {
+        right: calc(15% - 1%);
+    }
+
+    #left-eyebrow{
+        right: calc(23% - 1%);
+    }
+
+    #right-eyebrow{
+        right: calc(15.5% - 1%);
+    }
+    .mouth-container{
+        left: calc(17% + 0.5%);
+    }
+}
+
+@media (max-width: 1340px) {
+    #face2 {
+        right: calc(15% - 2%);
+    }
+
+    #left-eyebrow{
+        right: calc(23% - 2%);
+    }
+
+    #right-eyebrow{
+        right: calc(15.5% - 2%);
+    }
+    .mouth-container{
+        left: calc(17% + 1%);
+    }
+}
+
+@media (max-width: 1280px) {
+    #face2 {
+        right: calc(15% - 3%);
+    }
+
+    #left-eyebrow{
+        right: calc(23% - 3%);
+    }
+
+    #right-eyebrow{
+        right: calc(15.5% - 3%);
+    }
+    .mouth-container{
+        left: calc(17% + 1.5%);
+    }
+}
+
+@media (max-width: 1220px) {
+    #face2 {
+        right: calc(15% - 4%);
+    }
+
+    #left-eyebrow{
+        right: calc(23% - 4%);
+    }
+
+    #right-eyebrow{
+        right: calc(15.5% - 4%);
+    }
+    .mouth-container{
+        left: calc(17% + 2%);
+    }
+}
+
+@media (max-width: 1190px) {
+    #face2 {
+        right: calc(15% - 4.5%);
+    }
+
+    #left-eyebrow{
+        right: calc(23% - 4.5%);
+    }
+
+    #right-eyebrow{
+        right: calc(15.5% - 4.5%);
+    }
+    .mouth-container{
+        left: calc(17% + 2.5%);
+    }
+}
+
+
+
+
+

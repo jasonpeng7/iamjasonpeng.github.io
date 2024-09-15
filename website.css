@@ -32,14 +32,13 @@ body{
         23.5% 0,         /* Move vertically up */
         0 0            /* Close the path */
     );
-    width: 65%;
-    height: 40%;
-    background-size: 100% 100%;
+    width: 65vw;
+    height: 40vh;
+    background-size: 100vh 100vh;
     top: 23%;
     left: 31%;
     animation: fadeIn 0.5s ease-out 3s forwards;
     opacity: 0;
-
 } 
 
 .inner_container{
@@ -72,14 +71,13 @@ body{
     opacity: 0;
 }
 
-.portrait{
-    width: 40%;
-    position: absolute;
-    right: 11.5%;
-    background-color: transparent;
+.portrait {
+    width: 100vw; /* Use viewport width for responsiveness */
+    position: relative;
     text-align: center;
-    top: -2%;
+    top: 10%;
 }
+
 
 #left-eye{
     position: absolute;
@@ -92,41 +90,46 @@ body{
 #face2{
     position: absolute;
     right: 15%;
-    width: 20%;
-    height: 20%;
+    width: 20vw;
+    height: 20vh;
     top: 30%;
 }
 
-#face{
-    position: absolute;
-    right: 24.2%;
-    width: 8.5%;
-    top: 34%;
+/* #face{
+    width: 40vw;
+    position: fixed;
+    right: 10%;
+    top: 32%;
     z-index:1;
-}
+    background-color: rgba(0, 0, 0, 0.482);
+} */
 
 #left-eyebrow{
   position: absolute;
-  width: 20%; 
-  height: 20%;
+  width: 20vw; 
+  height: 20vh;
   top: 27.5%;
   right: 23%;
 }
 
 #right-eyebrow{
     position: absolute;
-    width: 20%; 
-    height: 20%;
+    width: 20vw; 
+    height: 20vh;
     top: 27.5%;
     right: 15.5%;
 }
 
+.mouth-container{
+    width: 100vw; /* Use viewport width for responsiveness */
+    position: relative;
+    text-align: center;
+    left: 17%;
+    top: 40%;
+}
+
 #mouth{
     position: absolute;
-    width: 100%;
-    top: -10%;
-    right: -22%;
-    height: 100%;
 }
 
 .hide{
@@ -485,8 +488,7 @@ body{
 
 #purple-logo{
     position: absolute;
-    min-width: 8.5vh; 
-    max-width: 8.5vh;
+    width: 8.5vh;
     top: 3vh;
     left: 4vh;
     cursor: pointer;
@@ -500,44 +502,47 @@ body{
 }
 .modal-button-content1{
     position: absolute;
-    top: 39vh;
-    left: 36vh;
+    top: 40.5%;
+    left: 19.5%;
     max-width: 25vh;
     min-width: 20vh;
     transform: translateY(0);
     transform:translateX(0);
+    /* background-color: red; */
 }
 
 .modal-button-content2{
     position: absolute;
-    top: 67.5vh;
-    left: 29.5vh;
+    top: 70.5%;
+    left: 16%;
     max-width: 25vh;
     min-width: 20vh;
     transform: translateY(0);
     transform:translateX(0);
+    /* background-color: blue; */
 
 }
 
 .modal-button-content3{
     position: absolute;
-    top: 82vh;
-    left: 29vh;
+    top: 86%;
+    left: 15.5%;
     max-width: 15vh;
     min-width: 10vh;
     transform: translateY(0);
     transform:translateX(0);
-
+    /* background-color: purple; */
 }
 
 .modal-button-content4{
     position: absolute;
-    top: 53vh;
-    left: 33.5vh;
+    top: 55.5%;
+    left: 18%;
     max-width: 15vh;
     min-width: 10vh;
     transform: translateY(0);
     transform:translateX(0);
+    /* background-color: pink; */
 
 }
 
@@ -955,12 +960,13 @@ dotlottie-player{
 
 .foreground-road {
     position: fixed;
-    left: 8vh;
-    width: 75.5%;
-    height: auto; /* Adjust height as needed */
-    top: 29.9vh; /* Adjust as necessary to place it correctly */
+    left: 5%;
+    width: 74.5%;
+    height: 0.4%; /* Adjust height as needed */
+    top: 31%; /* Adjust as necessary to place it correctly */
     z-index: 9;
     transform: translateY(0); /* Ensure it doesn't move */
+    background-color: rgb(147, 175, 203);
 }
 
 .sun{
@@ -1115,34 +1121,44 @@ dotlottie-player{
     animation: slideupSVGcontainer 1s forwards
 }
 
-.linkedin-icon, .instagram-icon, .mail-icon, .resume-icon{
+.linkedin-icon, .instagram-icon, .mail-icon, .resume-icon, .icon-splitter{
     cursor: pointer;
     width: 4%;
     position: absolute;
-    bottom: 10%;
+    top: 7.5%;
     text-align: center;
     z-index: 2;
     animation: fadeIn 1s ease-in-out forwards;
     opacity: 0;
 }
 
+.icon-splitter{
+    min-width: 10%;
+    min-height: 0.3%;
+    position: absolute;
+    top: 8.5%;
+    right: 32%;
+    background-color: rgb(147, 175, 203);
+    animation-delay: 1.5s;
+}
+
 .linkedin-icon{
-    right: 14%;
+    right: 28%;
     animation-delay: 2s;
 }
 
 .instagram-icon{
-    right: 9.8%;
+    right: 25%;
     animation-delay: 2.5s;
 }
 
 .mail-icon{
-    right: 5.5%;    
+    right: 22%;    
     animation-delay: 3s;
 }
 
 .resume-icon{
-    right: 1.5%;
+    right: 19%;
     animation-delay: 3.5s;
 }
 

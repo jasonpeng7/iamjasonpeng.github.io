@@ -1,0 +1,293 @@
+@media (max-width: 1400px) {
+    .modal-button-content1 {
+        top: 40.5%;  /* Adjust the position dynamically */
+        left: 25%; /* Adjust the left margin for smaller screens */
+    }
+    .modal-button-content2 {
+        top: 70.5%;  /* Adjust the position dynamically */
+        left: 20%; /* Adjust the left margin for smaller screens */
+    }
+    .modal-button-content3 {
+        top: 86%;  /* Adjust the position dynamically */
+        left: 19%; /* Adjust the left margin for smaller screens */
+    }
+    .modal-button-content4 {
+        top: 55.5%;  /* Adjust the position dynamically */
+        left: 23%; /* Adjust the left margin for smaller screens */
+    }
+}
+
+@media (max-width: 1200px) {
+    .modal-button-content1 {
+        top: 40.5%;  /* Adjust the position dynamically */
+        left: 26%; /* Adjust the left margin for smaller screens */
+    }
+    .modal-button-content2 {
+        top: 70.5%;  /* Adjust the position dynamically */
+        left: 22%; /* Adjust the left margin for smaller screens */
+    }
+    .modal-button-content3 {
+        top: 86%;  /* Adjust the position dynamically */
+        left: 21%; /* Adjust the left margin for smaller screens */
+    }
+    .modal-button-content4 {
+        top: 55.5%;  /* Adjust the position dynamically */
+        left: 24%; /* Adjust the left margin for smaller screens */
+    }
+
+    .foreground-road{
+        left: 5.5%;
+        width: 73.5%;
+    }
+
+
+    .linkedin-icon{
+        right: 40%;
+    }
+    .instagram-icon{
+        right: 35%;
+    }
+    
+    .mail-icon{
+        right: 30%;
+
+    }
+    .resume-icon{
+        right: 25%;
+    }
+
+    .icon-splitter{
+        right: 45%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .modal-button-content1 {
+        top: 40.5%;  /* Adjust the position dynamically */
+        left: 32.5%; /* Adjust the left margin for smaller screens */
+    }
+    .modal-button-content2 {
+        top: 70.5%;  /* Adjust the position dynamically */
+        left: 27%; /* Adjust the left margin for smaller screens */
+    }
+    .modal-button-content3 {
+        top: 86%;  /* Adjust the position dynamically */
+        left: 26%; /* Adjust the left margin for smaller screens */
+    }
+    .modal-button-content4 {
+        top: 55.5%;  /* Adjust the position dynamically */
+        left: 29%; /* Adjust the left margin for smaller screens */
+    }
+
+    .foreground-road{
+        left: 6%;
+        width: 72.5%;
+    }
+
+    .linkedin-icon{
+        right: 45%;
+    }
+    .instagram-icon{
+        right: 40%;
+    }
+    
+    .mail-icon{
+        right: 35%;
+
+    }
+    .resume-icon{
+        right: 30%;
+    }
+
+    .icon-splitter{
+        right: 50%;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .modal-button-content1 {
+        top: 40.5%;  /* Adjust the position dynamically */
+        left: 37%; /* Adjust the left margin for smaller screens */
+    }
+    .modal-button-content2 {
+        top: 70.5%;  /* Adjust the position dynamically */
+        left: 31.5%; /* Adjust the left margin for smaller screens */
+    }
+    .modal-button-content3 {
+        top: 86%;  /* Adjust the position dynamically */
+        left: 31%; /* Adjust the left margin for smaller screens */
+    }
+    .modal-button-content4 {
+        top: 55.5%;  /* Adjust the position dynamically */
+        left: 35%; /* Adjust the left margin for smaller screens */
+    }
+    #modal-button1:hover{
+        background-color: rgba(213, 206, 213, 0.558);
+        min-width: 80%;
+    }
+    #modal-button2:hover{
+        background-color: rgba(213, 206, 213, 0.558);
+        min-width: 80%;
+    }
+    #modal-button3:hover{
+        background-color: rgba(213, 206, 213, 0.558);
+        min-width: 80%;
+    }
+    
+    #modal-button4:hover{
+        background-color: rgba(213, 206, 213, 0.558);
+        min-width: 80%;
+    }
+
+    .foreground-road{
+        left: 6.5%;
+        width: 71.5%;
+    }
+}
+
+@media (max-width: 700px) {
+    .modal-button-content1 {
+        top: 39.5%;  /* Adjust the position dynamically */
+        left: 43%; /* Adjust the left margin for smaller screens */
+        max-width: 10vh
+    }
+    .modal-button-content2 {
+        top: 69.5%;  /* Adjust the position dynamically */
+        left: 37.5%; /* Adjust the left margin for smaller screens */
+        max-width: 10vh
+
+    }
+    .modal-button-content3 {
+        top: 85%;  /* Adjust the position dynamically */
+        left: 37%; /* Adjust the left margin for smaller screens */
+        max-width: 10vh
+
+    }
+    .modal-button-content4 {
+        top: 54.5%;  /* Adjust the position dynamically */
+        left: 41%; /* Adjust the left margin for smaller screens */
+        max-width: 10vh
+
+    }
+    .linkedin-icon, .instagram-icon, .mail-icon, .resume-icon{
+        top: 32%;
+    }
+    .icon-splitter{
+        top: 33.5%;
+        right: 53%;
+    }
+    .linkedin-icon{
+        right: 46%;
+    }
+    .instagram-icon{
+        right: 38%;
+    }
+    
+    .mail-icon{
+        right: 30%;
+    }
+    .resume-icon{
+        right: 22%;
+    }
+    .foreground-road{
+        left: 7%;
+        width: 71%;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+    .modal-button-content1 {
+        top: 41%;  /* Adjust the position dynamically */
+        left: 40%; /* Adjust the left margin for smaller screens */
+        max-width: 2vw;
+        font-size: 80%;
+
+    }
+    .modal-button-content2 {
+        top: 71%;  /* Adjust the position dynamically */
+        left: 32.5%; /* Adjust the left margin for smaller screens */
+        max-width: 2vw;
+        font-size: 80%;
+
+
+    }
+    .modal-button-content3 {
+        top: 86%;  /* Adjust the position dynamically */
+        left: 30%; /* Adjust the left margin for smaller screens */
+        min-width: 10vw;
+        font-size: 80%;
+
+
+    }
+    .modal-button-content4 {
+        top: 56%;  /* Adjust the position dynamically */
+        left: 34%; /* Adjust the left margin for smaller screens */
+        min-width: 20vw;
+        font-size: 80%;
+    }
+
+    #modal-button1.modal-buttons{
+        font-size: 25px;
+    }
+    #modal-button2.modal-buttons{
+        font-size: 25px;
+
+    }
+    #modal-button3.modal-buttons{
+        font-size: 25px;
+
+    }
+    #modal-button4.modal-buttons{
+        font-size: 25px;
+
+    }
+    .foreground-road{
+        left: 7.5%;
+        width: 70%;
+    }
+
+    .modal{
+        overflow: auto;
+    }
+}
+
+@media (max-width: 550px) {
+    .modal-button-content1 {
+        top: 41%;  /* Adjust the position dynamically */
+        left: 42%; /* Adjust the left margin for smaller screens */
+        max-width: 3vw;
+        font-size: 70%;
+
+
+    }
+    .modal-button-content2 {
+        top: 71%;  /* Adjust the position dynamically */
+        left: 34.5%; /* Adjust the left margin for smaller screens */
+        max-width: 3vw;
+        font-size: 70%;
+
+
+    }
+    .modal-button-content3 {
+        top: 86%;  /* Adjust the position dynamically */
+        left: 33%; /* Adjust the left margin for smaller screens */
+        min-width: 10vw;
+        font-size: 70%;
+    }
+    .modal-button-content4 {
+        top: 56%;  /* Adjust the position dynamically */
+        left: 38%; /* Adjust the left margin for smaller screens */
+        min-width: 15vw;
+        font-size: 70%;
+    }
+    .foreground-road{
+        left: 9%;
+        width: 69%;
+    }
+    .modal{
+        overflow: auto;
+    }
+}
