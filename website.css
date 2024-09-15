@@ -1236,3 +1236,21 @@ a:hover{
     display: flex;
     top: 80%;
 }
+
+.jason{
+    font-size: 90px;
+    font-weight: 800;
+    display: inline-block; 
+    left: 370px; 
+    position: absolute; 
+    top: 215px;
+}
+
+.name-is{
+    font-size: 90px;
+    font-weight: 400;
+    display: inline-block; 
+    left: 45px;
+    position: absolute;
+    top: 215px;
+}
