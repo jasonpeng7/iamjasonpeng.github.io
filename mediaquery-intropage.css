@@ -157,7 +157,7 @@
 
 @media (max-width: 480px) {
     .portrait{
-        width: 20vh;
+        width: 10vh;
         top: 2%;
         left: 0;
     }
@@ -189,7 +189,7 @@
     }
 
     .inner_container{
-        background-color: rgb(121, 235, 255);
+        background-color: rgb(255, 128, 121);
     }
 }
 
