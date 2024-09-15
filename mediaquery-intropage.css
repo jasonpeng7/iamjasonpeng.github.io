@@ -174,13 +174,13 @@
     .name-is{
         font-size: 45px;
         top:450px;
-        left: 35px;
+        left: 30px;
     }
 
     .hi-my{
         font-size: 45px;
         top: 400px;
-        left: 35px;
+        left: 30px;
     }
 
     .passionate{
@@ -190,11 +190,11 @@
     #animation-hard-up{
         top: 520px;
         width: 40%;
-        left: 35px;
+        left: 30px;
     }
 
     .inner_container{
-        background-color: rgb(136, 183, 97);
+        background-color: rgb(97, 172, 183);
     }
 
     #intro-page::before {
