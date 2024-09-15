@@ -170,7 +170,8 @@
         left: -40%;
         display: block;
         animation: fadeIn 1s ease-out forwards;
-        animation-delay: 2s
+        animation-delay: 2s;
+        opacity: 0;
     }
 
     .name-is{
@@ -196,7 +197,7 @@
     }
 
     .inner_container{
-        background-color: rgb(97, 183, 126);
+        background-color: rgb(97, 124, 183);
     }
 
     #intro-page::before {
@@ -208,7 +209,7 @@
 
     .scroll-down{
         left: 80%;
-        bottom: 18%;
+        bottom: 16%;
     }
 
     .please-scroll{
