@@ -358,4 +358,11 @@
         top: 3%;
     }
 
+}@media only screen 
+and (device-width: 390px) 
+and (device-height: 844px) 
+and (-webkit-device-pixel-ratio: 3) {
+    .inner_container{
+        background-color: blanchedalmond;
+    }
 }
