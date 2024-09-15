@@ -162,16 +162,18 @@
         left: 0;
     }
 
+    .animation-slide-up{
+        top: 20%;
+        left: 5%;
+    }
+
     .name-is{
         font-size: 45px;
-        left: 5%;
-        top: 20%;
     }
 
     .jason{
         font-size: 45px;
-        left: 5%;
-        top: 20%;
+
     }
 
     .hi-my{
@@ -187,7 +189,7 @@
     }
 
     .inner_container{
-        background-color: rgb(210, 121, 255);
+        background-color: rgb(121, 235, 255);
     }
 }
 
