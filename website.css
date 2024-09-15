@@ -1254,3 +1254,26 @@ a:hover{
     position: absolute;
     top: 215px;
 }
+
+.hi-my{
+    font-size: 90px;
+    font-weight: 400;
+    display: inline-block; 
+    left: 45px; 
+    position: absolute; 
+    top: 130px;
+}
+
+.animation-hard-up{
+    position: absolute; 
+    top:340px; 
+    left: 50px; 
+    width: 380px; 
+
+}
+
+.passionate{
+    font-weight: 400; 
+    font-size: 25px; 
+    line-height: 1.2;
+}

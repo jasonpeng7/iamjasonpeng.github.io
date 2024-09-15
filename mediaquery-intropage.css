@@ -185,18 +185,21 @@
     }
 
     .animation-slide-down{
-        top: 16%;
         left: 5%;
+        top: 15%;
+    }
+
+    .passionate{
+        font-size: 13px;
     }
 
     .animation-hard-up{
-        font-size: 10%;
-        left: 0;
+        left: 5%;
         top: 24%;
     }
 
     .inner_container{
-        background-color: rgb(121, 123, 255);
+        background-color: rgb(233, 255, 121);
     }
 }
 
