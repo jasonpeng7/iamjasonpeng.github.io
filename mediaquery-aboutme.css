@@ -12,6 +12,16 @@
     display: inline-flex; z-index: 2;
 }
 
+
+
+.about-me-content1{
+    top: 38%; z-index: 2
+}
+
+.about-me-content2{
+    top: 58%; z-index: 2
+}
+
 @media (max-width: 480px) {
     #typewriter {
         font-size: 45px;
@@ -21,23 +31,25 @@
     }
 
     .inner_container{
-        background-color: rgb(75, 140, 140);
+        background-color: rgb(92, 140, 75);
     }
 
     .about-me-content1{
         font-size: 13px;
         left: 30px;
         width: 40%;
+        top: 38%;
     }
     
     .about-me-content2{
         font-size: 13px;
         left: 30px;
         width: 40%;
+        top: 58%;
     }
 
     #frank-ruhl-libre-regular-iam{
-        font-size: 13px;
+        font-size: 45px;
         left: 30px;
     }
 }
