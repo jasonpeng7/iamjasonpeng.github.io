@@ -167,7 +167,7 @@
 
     .portrait2{
         top: 15%;
-        left: -45%;
+        left: -40%;
         display: block;
     }
 
@@ -204,7 +204,7 @@
     }
 
     .inner_container{
-        background-color: rgb(255, 233, 121);
+        background-color: rgb(121, 233, 255);
     }
 }
 
