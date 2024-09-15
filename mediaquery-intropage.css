@@ -156,8 +156,12 @@
 
 
 @media (max-width: 480px) {
-    .portrait{
+    .portrait svg{
         width: 10vh;
+        height: 10vh;
+    }
+
+    .portrait{
         top: 2%;
         left: 0;
     }
@@ -177,9 +181,12 @@
     }
 
     .hi-my{
-        font-size: 20%;
-        left: 0;
+        font-size: 45px;
+    }
+
+    .animation-slide-down{
         top: 16%;
+        left: 5%;
     }
 
     .animation-hard-up{
@@ -189,7 +196,7 @@
     }
 
     .inner_container{
-        background-color: rgb(255, 128, 121);
+        background-color: rgb(121, 123, 255);
     }
 }
 
