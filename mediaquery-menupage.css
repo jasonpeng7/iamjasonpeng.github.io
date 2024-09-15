@@ -296,7 +296,7 @@ and (-webkit-device-pixel-ratio: 3) {
     }
     
     .inner_container{
-        background-color: aqua;
+        background-color: rgb(71, 160, 160);
     }
     .modal-button-content1 {
         top: 41%;  /* Adjust the position dynamically */
