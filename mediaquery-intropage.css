@@ -171,6 +171,10 @@
         display: block;
     }
 
+    .animation-slide-up{
+        top: 1200px;
+    }
+
     .name-is{
         font-size: 45px;
     }
@@ -184,15 +188,22 @@
         font-size: 45px;
     }
 
-
+    .animation-slide-down{
+        left: 13.5%;
+        top: 1050px;
+    }
 
     .passionate{
         font-size: 13px;
     }
 
+    #animation-hard-up{
+        left: 13.5%;
+        top: 1300px;
+    }
 
     .inner_container{
-        background-color: rgb(246, 255, 121);
+        background-color: rgb(255, 121, 184);
     }
 }
 
