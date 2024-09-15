@@ -166,19 +166,19 @@
     }
 
     .portrait2{
-        top: 23%;
+        top: 20%;
         left: -40%;
         display: block;
     }
 
     .name-is{
         font-size: 45px;
-        top:550px;
+        top:525px;
     }
 
     .hi-my{
         font-size: 45px;
-        top: 250px;
+        top: 450px;
     }
 
     .passionate{
@@ -187,11 +187,18 @@
     }
 
     #animation-hard-up{
-        top: 700px;
+        top: 525px;
     }
 
     .inner_container{
-        background-color: rgb(152, 183, 97);
+        background-color: rgb(97, 183, 120);
+    }
+
+    #intro-page::before {
+        width: 30vw; /* Adjust the width to make it shorter */
+        height: 15vh; /* You can also adjust the height accordingly */
+        top: 10%;
+        left: 25%; /* Adjust the positioning if needed */
     }
 }
 
