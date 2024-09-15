@@ -196,10 +196,6 @@
         left: 30px;
     }
 
-    .inner_container{
-        background-color: rgb(103, 97, 183);
-    }
-
     #intro-page::before {
         width: 80vw; /* Adjust the width to make it shorter */
         height: 40vh; /* You can also adjust the height accordingly */

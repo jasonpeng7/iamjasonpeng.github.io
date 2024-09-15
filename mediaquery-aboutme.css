@@ -1,0 +1,36 @@
+#frank-ruhl-libre-regular-iam{
+    font-family: "Frank Ruhl Libre", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color:rgb(0, 21, 67);
+    top: 14%; 
+    left: 3.2%; 
+    font-size: 80px;
+    font-weight: 400; 
+    position: absolute; 
+    display: inline-flex; z-index: 2;
+}
+
+
+
+.about-me-content1{
+    top: 38%; z-index: 2
+}
+
+.about-me-content2{
+    top: 58%; z-index: 2
+}
+
+@media (max-width: 480px) {
+    #typewriter {
+        font-size: 45px;
+        max-width: 60%;
+        left: 0;
+        top: 25%;
+    }
+
+    .inner_container{
+        background-color: rgb(75, 140, 118);
+    }
+}
