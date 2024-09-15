@@ -157,25 +157,25 @@
 
 @media (max-width: 480px) {
     .portrait{
-        width: 10%;
+        width: 2%;
         top: 5%;
         left: 0;
     }
 
     .name-is{
-        font-size: 45px;
+        font-size: 20%;
         left: 0;
         top: 20%;
     }
 
     .jason{
-        font-size: 45px;
+        font-size: 20%;
         left: 0;
         top: 20%;
     }
 
     .hi-my{
-        font-size: 45px;
+        font-size: 20%;
         left: 0;
         top: 16%;
     }
