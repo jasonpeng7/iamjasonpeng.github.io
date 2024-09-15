@@ -258,9 +258,7 @@
 
 
 @media (max-width: 480px) {
-    .inner_container{
-        background-color: rgb(156, 134, 165);
-    }
+
 
     .modal-button-content1 {
         top: 41%;  /* Adjust the position dynamically */
