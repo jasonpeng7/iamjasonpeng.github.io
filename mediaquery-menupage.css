@@ -292,7 +292,7 @@
     }
 }
 
-@media (max-width: 480) {
+@media (max-width: 480px) {
     .modal-button-content1 {
         top: 41%;  /* Adjust the position dynamically */
         left: 45%; /* Adjust the left margin for smaller screens */
