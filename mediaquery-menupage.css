@@ -305,7 +305,7 @@
         left: 37.5%; /* Adjust the left margin for smaller screens */
         max-width: 2vw;
         font-size: 65%;
-        background-color: blue;
+        background-color: green;
 
 
     }
@@ -352,5 +352,10 @@
         top: 20%;
     }
 
+
+
+    .foreground-tree1, .foreground-tree2, .foreground-tree3, .foreground-tree4{
+        top: 3%;
+    }
 
 }
