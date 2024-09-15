@@ -157,20 +157,20 @@
 
 @media (max-width: 480px) {
     .portrait{
-        width: 2%;
-        top: 5%;
+        width: 20vh;
+        top: 2%;
         left: 0;
     }
 
     .name-is{
-        font-size: 20%;
-        left: 0%;
+        font-size: 45px;
+        left: 5%;
         top: 20%;
     }
 
     .jason{
-        font-size: 20%;
-        left: 0;
+        font-size: 45px;
+        left: 5%;
         top: 20%;
     }
 
