@@ -25,12 +25,12 @@
 @media (max-width: 480px) {
     #typewriter {
         font-size: 45px;
-        max-width: 60%;
-        left: 0;
+        max-width: 30%;
+        left: 30px;
         top: 25%;
     }
 
     .inner_container{
-        background-color: rgb(75, 140, 118);
+        background-color: rgb(75, 96, 140);
     }
 }
