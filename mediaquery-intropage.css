@@ -196,7 +196,7 @@
     }
 
     .inner_container{
-        background-color: rgb(97, 183, 182);
+        background-color: rgb(97, 183, 126);
     }
 
     #intro-page::before {
@@ -216,9 +216,9 @@
     }
 
     .please-scroll-line{
-        max-height: 12%;
+        max-height: 7%;
         max-width: 0.15%;
-        left: 80.5%;
+        left: 81%;
     }
 }
 
