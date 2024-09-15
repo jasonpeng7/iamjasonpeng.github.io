@@ -157,12 +157,12 @@
 
 @media (max-width: 480px) {
     .portrait svg{
-        width: 10vh;
-        height: 10vh;
+        width: 35vh;
+        height: 35vh;
     }
 
     .portrait{
-        top: 2%;
+        top: 15%;
         left: 0;
     }
 
