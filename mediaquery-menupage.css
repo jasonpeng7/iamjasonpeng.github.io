@@ -255,47 +255,13 @@
 }
 
 
-@media only screen 
-and (device-width: 390px) 
-and (device-height: 844px) 
-and (-webkit-device-pixel-ratio: 3) {
-    .modal-button-content1 {
-        top: 41%;  /* Adjust the position dynamically */
-        left: 42%; /* Adjust the left margin for smaller screens */
-        max-width: 3vw;
-        font-size: 70%;
-    }
-    .modal-button-content2 {
-        top: 71%;  /* Adjust the position dynamically */
-        left: 34.5%; /* Adjust the left margin for smaller screens */
-        max-width: 3vw;
-        font-size: 70%;
 
 
-    }
-    .modal-button-content3 {
-        top: 86%;  /* Adjust the position dynamically */
-        left: 33%; /* Adjust the left margin for smaller screens */
-        min-width: 10vw;
-        font-size: 70%;
-    }
-    .modal-button-content4 {
-        top: 56%;  /* Adjust the position dynamically */
-        left: 38%; /* Adjust the left margin for smaller screens */
-        min-width: 15vw;
-        font-size: 70%;
-    }
-    .foreground-road{
-        left: 9%;
-        width: 69%;
-    }
-    .modal{
-        overflow: auto;
-    }
-    
+@media (max-width: 480px) {
     .inner_container{
-        background-color: rgb(71, 160, 160);
+        background-color: rgb(46, 87, 87);
     }
+
     .modal-button-content1 {
         top: 41%;  /* Adjust the position dynamically */
         left: 45%; /* Adjust the left margin for smaller screens */
