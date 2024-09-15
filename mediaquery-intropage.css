@@ -179,5 +179,9 @@
         left: 0;
         top: 16%;
     }
+
+    .inner_container{
+        background-color: rgb(134, 165, 150);
+    }
 }
 
