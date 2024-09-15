@@ -167,13 +167,13 @@
 
     .portrait2{
         top: 15%;
-        left: -30%;
+        left: -45%;
         display: block;
     }
 
     .animation-slide-up{
-        top: 20%;
-        left: 65%;
+        top: 65%;
+        left: 13.5%;
     }
 
     .name-is{
@@ -190,7 +190,7 @@
     }
 
     .animation-slide-down{
-        left: 15%;
+        left: 13.5%;
         top: 60%;
     }
 
@@ -199,12 +199,12 @@
     }
 
     #animation-hard-up{
-        left: 15%;
+        left: 13.5%;
         top: 70%;
     }
 
     .inner_container{
-        background-color: rgb(150, 121, 255);
+        background-color: rgb(255, 233, 121);
     }
 }
 
