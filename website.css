@@ -1241,33 +1241,34 @@ a:hover{
     font-size: 90px;
     font-weight: 450;
     display: inline-block; 
-    left: 5%;
     position: absolute;
-    top: 225px;
 
     font-family: "Frank Ruhl Libre", serif;
     font-optical-sizing: auto;
     font-style: normal;
     color:rgb(0, 21, 67);
+    top: 225px;
+    left: 55px;
 }
 
 .hi-my{
     font-size: 90px;
     font-weight: 450;
     display: inline-block; 
-    left: 5%;
     position: absolute; 
-    top: 130px;
 
     font-family: "Frank Ruhl Libre", serif;
     font-optical-sizing: auto;
     font-style: normal;
     color:rgb(0, 21, 67);
+    top: 125px;
+    left: 55px;
 }
+
 
 #animation-hard-up{
     position: absolute; 
-    left: 5%;
+    left: 55px;
     top: 350px;
     width: 25%;
 }
