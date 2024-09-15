@@ -294,9 +294,7 @@ and (-webkit-device-pixel-ratio: 3) {
     .modal{
         overflow: auto;
     }
-}
-
-@media (max-width: 480px) {
+    
     .inner_container{
         background-color: aqua;
     }
