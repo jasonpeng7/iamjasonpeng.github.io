@@ -174,11 +174,13 @@
     .name-is{
         font-size: 45px;
         top:450px;
+        left: 25px
     }
 
     .hi-my{
         font-size: 45px;
         top: 400px;
+        left: 25px
     }
 
     .passionate{
@@ -186,19 +188,21 @@
     }
 
     #animation-hard-up{
-        top: 500px;
-        width: 40%
+        top: 550px;
+        width: 40%;
+        left: 25px;
+        animation-delay: 2s;
     }
 
     .inner_container{
-        background-color: rgb(106, 97, 183);
+        background-color: rgb(136, 183, 97);
     }
 
     #intro-page::before {
-        width: 80vw; /* Adjust the width to make it shorter */
+        width: 50vw; /* Adjust the width to make it shorter */
         height: 40vh; /* You can also adjust the height accordingly */
         top: 10%;
-        left: 25%; /* Adjust the positioning if needed */
+        left: 0%; /* Adjust the positioning if needed */
     }
 }
 
