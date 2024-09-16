@@ -120,8 +120,8 @@
     #section2-line-break2 {top: 60%;}
 
     #section2-happymeter-svg {top: 15%;}
-    #section2-wordle-svg {top: 35%}
-    #section2-hangman-svg {top: 60%}
+    #section2-wordle-svg {top: 40%}
+    #section2-hangman-svg {top: 65%}
 
     #section2-CHP-content, #section2-WSP-content, #section2-HMG-content {
         width: 20%;
@@ -129,14 +129,14 @@
         left: 30px;
     }
 
-    #section2-CHP-content {top:30%}
+    #section2-CHP-content {top:35%}
     #section2-CHP {top: 27%}
 
-    #section2-WSP {top: 47%}
-    #section2-WSP-content {top: 50%}
+    #section2-WSP {top: 52%}
+    #section2-WSP-content {top: 55%}
 
-    #section2-HMG {top: 75%}
-    #section2-HMG-content {top: 80%}
+    #section2-HMG {top: 70%}
+    #section2-HMG-content {top: 73%}
 
 
     #section2-CHP, #section2-WSP, #section2-HMG{
