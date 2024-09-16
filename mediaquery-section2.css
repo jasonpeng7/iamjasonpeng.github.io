@@ -1,4 +1,4 @@
-.section2-python{
+#section2-python{
     position:absolute;
     margin: 60px;
     top:6%; left:0;
@@ -52,19 +52,19 @@
 #section2-HMG { top: 71.5%; }
 
 @media (max-width: 480px) {
-    .section2-python{
+    #section2-python{
         left: 30px;
-        max-width: 100px;
+        max-width: 10px;
         font-size: 10px;
     }
 
     #section2-happymeter-svg, #section2-hangman-svg{
-        width: 12%;
+        width: 5%;
         left: 30px;
     }
 
     #section2-wordle-svg{
-        width: 17%;
+        width: 5%;
         left: 20px;
     }
 
