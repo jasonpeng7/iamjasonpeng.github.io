@@ -4,7 +4,7 @@
 var modal = document.getElementById("svgModal");
 
 // Get the images that open the modal
-var containers = document.querySelectorAll(".red-hat-display-regular");
+var containers = document.querySelectorAll(".intro-menu");
 
 var loadingOverlay = document.getElementById("loading_overlay");
 
