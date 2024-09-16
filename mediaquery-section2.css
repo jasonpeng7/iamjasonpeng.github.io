@@ -69,6 +69,28 @@
 #section2-WSP { top: 44.5%; }
 #section2-HMG { top: 71.5%; }
 
+#section2-CHP-content, #section2-WSP-content, #section2-HMG-content {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(0, 21, 67);
+    position: absolute;
+    width: 55%;
+    text-align: left;
+    padding: 20px;
+    left: 39%;
+    line-height: 2;
+    font-size: 18px;
+    z-index: 2;
+}
+
+/* Individual top positions */
+#section2-CHP-content { top: 20.5%; }
+#section2-WSP-content { top: 49.5%; }
+#section2-HMG-content { top: 76.5%; }
+
+
 @media (max-width: 480px) {
     #section2-python{
         left: -10px;
@@ -86,15 +108,25 @@
     }
 
     .inner_container{
-        background-color: rgb(93, 164, 123);
+        background-color: rgb(113, 164, 93);
         
     }
 
     #section2-line-break1, #section2-line-break2{
-        width: 20vh;
+        width: 20vw;
         left: 30px
     }
 
     #section2-line-break1 {top: 30%;}
     #section2-line-break2 {top: 60%;}
+
+    #section2-happymeter-svg {top: 20%;}
+    #section2-wordle-svg {top: 40%}
+    #section2-hangman-svg {top: 60%;}
+
+    #section2-CHP-content, #section2-WSP-content, #section2-HMG-content {
+        width: 20%;
+        font-size: 13px;
+    }
+
 }

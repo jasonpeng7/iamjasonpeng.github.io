@@ -663,17 +663,6 @@ body{
 } */
 
 
-.section2-content-content{
-    position: absolute;
-    width: 55%;
-    text-align: left;
-    padding:20px;
-    left:39%;
-    line-height: 2;
-    font-size: 18px;
-    z-index: 2;
-}
-
 #frank-ruhl-libre-regular {
 font-family: "Frank Ruhl Libre", serif;
 font-optical-sizing: auto;
