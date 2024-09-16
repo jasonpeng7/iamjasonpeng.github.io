@@ -107,7 +107,7 @@
     }
 
     .inner_container{
-        background-color: rgb(113, 164, 93);
+        background-color: rgb(93, 146, 164);
         
     }
 
@@ -119,9 +119,9 @@
     #section2-line-break1 {top: 30%;}
     #section2-line-break2 {top: 60%;}
 
-    #section2-happymeter-svg {top: 20%;}
-    #section2-wordle-svg {top: 40%}
-    #section2-hangman-svg {top: 60%;}
+    #section2-happymeter-svg {top: 15%;}
+    #section2-wordle-svg {top: 55%}
+    #section2-hangman-svg {top: 90%;}
 
     #section2-CHP-content, #section2-WSP-content, #section2-HMG-content {
         width: 20%;
@@ -130,8 +130,8 @@
     }
 
     #section2-CHP, #section2-WSP, #section2-HMG{
-        width: 20%;
-        font-size:17px;
+        width: 50%;
+        font-size:14px;
         left: 30px;
     }
 
