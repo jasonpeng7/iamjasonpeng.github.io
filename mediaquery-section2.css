@@ -147,12 +147,12 @@
         display: none;
     }
 
-    #section2-line-break1-mobile { top: 50%; display: block;}
-    #section2-line-break2-mobile {top: 70%; display: block;}
+    #section2-line-break1-mobile { top: 40%; display: block;}
+    #section2-line-break2-mobile {top: 65%; display: block;}
 
 
     #section2-CHP, #section2-WSP, #section2-HMG{
-        width: 50%;
+        width: 20%;
         font-size:12px;
         font-weight: 200;
         left: 30px;
