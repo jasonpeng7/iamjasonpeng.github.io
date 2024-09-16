@@ -76,11 +76,13 @@
     #hidden-ecs32a{
         left: 5%; top: 13%;
         font-size: 10px;
+        width: 3vh;
     }
     
     #hidden-ecs32a-content{
         left: 5%; top: 13%;
         font-size: 5px;
+        width: 3vh;
     }
     
     #hidden-ecs20{
@@ -115,6 +117,6 @@
     }
 
     .inner_container{
-        background-color: rgb(75, 140, 85);
+        background-color: rgb(75, 98, 140);
     }
 }
