@@ -48,7 +48,7 @@
         font-size: 13px;
         left: 30px;
         width: 20%;
-        top: 53%;
+        top: 60%;
     }
 
     #frank-ruhl-libre-regular-iam{
@@ -60,7 +60,7 @@
         display: block;
         background-color: rgba(147, 175, 203, 0.395);
         min-width: 35vh; min-height: 20vh;
-        top: 35%; left: 30px;
+        top: 20%; left: 30px;
         position: absolute;
         z-index : 1;
     }
