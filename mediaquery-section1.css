@@ -81,34 +81,30 @@
 
     #hidden-ecs32a-content, #hidden-ecs20-content, #hidden-ecs32b-content, #hidden-harvard-content {
         font-size: 7.5px;
-        width: 20vh;
+        width: 18vh;
     }
 
     /* Positioning for ECS32A and ECS32B (left-side elements) */
     #hidden-ecs32a, #hidden-ecs32a-content, #hidden-ecs32b, #hidden-ecs32b-content {
-        left: 5%;
+        left: 3%;
     }
 
     /* Positioning for ECS20 and Harvard (right-side elements) */
     #hidden-ecs20, #hidden-ecs20-content, #hidden-harvard, #hidden-harvard-content {
-        right: -12%;
+        right: -14%;
     }
 
     /* Individual top positions */
-    #hidden-ecs32a, #hidden-ecs32a-content { top: 13%; }
-    #hidden-ecs20, #hidden-ecs20-content { top: 19%; }
-    #hidden-ecs32b, #hidden-ecs32b-content { top: 25%; }
-    #hidden-harvard, #hidden-harvard-content { top: 31%; }
-
-    /* Specific background color styling */
-    #hidden-ecs32a { background-color: beige; }
-    #hidden-ecs32a-content { background-color: aqua; }
+    #hidden-ecs32a, #hidden-ecs32a-content { top: 15%; }
+    #hidden-ecs20, #hidden-ecs20-content { top: 21%; }
+    #hidden-ecs32b, #hidden-ecs32b-content { top: 27%; }
+    #hidden-harvard, #hidden-harvard-content { top: 33%; }
 
     .inner_container {
-        background-color: rgb(75, 124, 140);
+        background-color: rgb(75, 140, 79);
     }
 
     .hidden2 {
-        left: 9%;
+        left: 11%;
     }
 }
