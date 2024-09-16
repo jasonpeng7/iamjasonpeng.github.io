@@ -146,12 +146,12 @@
         display: none;
     }
 
-    #section2-line-break1-mobile {top: 38%}
-    #section2-line-break2-mobile {top: 65%}
+    #section2-line-break1-mobile {top: 43%}
+    #section2-line-break2-mobile {top: 68%}
 
     #section2-line-break1-mobile, #section2-line-break2-mobile{
         display: block;
-        min-width: 20%;
+        min-width: 21%;
     }
 
     #section2-CHP, #section2-WSP, #section2-HMG{
