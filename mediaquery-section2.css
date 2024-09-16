@@ -138,6 +138,11 @@
     #section2-HMG {top: 83%}
     #section2-HMG-content {top: 86%}
 
+    #section2-line-break1, #section2-line-break2{
+        width: 10%;
+        left: 30px;
+    }
+
 
     #section2-CHP, #section2-WSP, #section2-HMG{
         width: 50%;
