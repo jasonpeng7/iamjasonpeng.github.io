@@ -1,0 +1,120 @@
+.section1-title-background{
+    position:relative; 
+    top: 9%; left:4% ;
+    font-weight: 500; 
+    display: inline-block;
+    font-family: "Frank Ruhl Libre", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color:rgb(0, 21, 67);
+}
+
+#hidden-ecs32a{
+    left: 22%; top: 13%;
+}
+
+#hidden-ecs32a-content{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    left:22%; top: 13%; 
+    text-align: right; 
+    color: rgb(0, 21, 67);
+}
+
+#hidden-ecs20{
+    right:-54%; top: 19%;
+    text-align: left;
+}
+
+#hidden-ecs20-content{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    right: -54%; top: 19%; 
+    text-align: left;
+    color: rgb(0, 21, 67);
+}
+
+#hidden-ecs32b{
+    left: 22%; top: 25%;
+}
+
+#hidden-ecs32b-content{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    left: 22%; top: 25%; 
+    text-align: right;
+    color: rgb(0, 21, 67);
+}
+
+#hidden-harvard{
+    right: -54%; top: 31%;
+}
+
+#hidden-harvard-content{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    right: -54%; top: 31%; 
+    text-align: left;
+    color: rgb(0, 21, 67);
+}
+
+@media (max-width: 480px) {
+    .section1-title-background{
+        left: 30px;
+        top: 9%;
+    }
+
+    #hidden-ecs32a{
+        left: 5%; top: 13%;
+        font-size: 40px;
+    }
+    
+    #hidden-ecs32a-content{
+        left: 5%; top: 13%;
+        font-size: 20px;
+    }
+    
+    #hidden-ecs20{
+        right:-80%; top: 19%;
+        text-align: left;
+        font-size: 40px;
+    }
+    
+    #hidden-ecs20-content{
+        right:-80%; top: 19%;
+        font-size: 20px;
+    }
+    
+    #hidden-ecs32b{
+        left: 5%; top: 25%;
+        font-size: 40px;
+    }
+    
+    #hidden-ecs32b-content{
+        left: 5%; top: 25%;
+        font-size: 20px;
+    }
+    
+    #hidden-harvard{
+        right: -80%; top: 31%;
+        font-size: 40px;
+    }
+    
+    #hidden-harvard-content{
+        right: -80%; top: 31%;
+        font-size: 20px;
+    }
+
+    .inner_container{
+        background-color: rgb(75, 140, 85);
+    }
+}
