@@ -55,7 +55,6 @@
     #section2-python{
         left: 30px;
         max-width: 10px;
-        font-size: 10px;
     }
 
     #section2-happymeter-svg, #section2-hangman-svg{
@@ -69,6 +68,6 @@
     }
 
     .inner_container{
-        background-color: rgb(93, 113, 164);
+        background-color: rgb(99, 164, 93);
     }
 }
