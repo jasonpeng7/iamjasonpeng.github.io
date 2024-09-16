@@ -1,14 +1,18 @@
 // script.js
 
 // Get the modal
+// Get the modal
 var modal = document.getElementById("svgModal");
+
+// Get the overlay
+var modalOverlay = document.getElementById("modalOverlay");
 
 // Get the images that open the modal
 var containers = document.querySelectorAll(".intro-menu");
 
 var loadingOverlay = document.getElementById("loading_overlay");
 
-// When the user clicks on an image, open the modal
+// When the user clicks on an image, open the modal and show the overlay
 containers.forEach(function(container) {
     container.onclick = function() {
         loadingOverlay.style.display = "flex";
@@ -18,15 +22,29 @@ containers.forEach(function(container) {
         }, 800);
 
         setTimeout(() => {
-
-            loadingOverlay.style.display= "none";
+            loadingOverlay.style.display = "none";
             loadingOverlay.classList.remove("separate");
+            
+            // Show the overlay and modal
+            modalOverlay.style.display = "block";
             modal.style.display = "block";
-
         }, 1400);
     };
 });
 
+// When the user clicks anywhere outside of the modal, close it
+modalOverlay.onclick = function() {
+    modal.style.display = "none";
+    modalOverlay.style.display = "none";
+};
+
+window.onclick = function(event) {
+    // Close modal if clicked outside the modal content (on overlay)
+    if (event.target == modalOverlay) {
+        modal.style.display = "none";
+        modalOverlay.style.display = "none";
+    }
+};
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -36,18 +54,24 @@ window.onclick = function(event) {
 };
 
 //Takes user to specific container
-function closeandScroll(modalID,sectionID){
-    
-    var modal = document.getElementById("svgModal");
+function closeandScroll(modalID, sectionID) {
+    var modal = document.getElementById(modalID);
+    var overlay = document.getElementById("modalOverlay");
 
-    if(modal){
+    if (modal) {
         modal.style.display = 'none';
     }
+
+    if (overlay) {
+        overlay.style.display = 'none';
+    }
+
     var element = document.getElementById(sectionID);
-    if(element){
-        element.scrollIntoView({behavior: "smooth"});
+    if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
     }
 }
+
 
 //  Show the back-to-top icon when the user scrolls down if modal was interacted with
 // window.addEventListener('scroll', function() {
@@ -78,21 +102,36 @@ function topFunction() {
 }
 
 
-var svgcontainer = document.getElementById("svgModal")
+var svgcontainer = document.getElementById("svgModal");
+var modalOverlay = document.getElementById('modalOverlay'); // Ensure you have the correct ID for the overlay
 
 function exitLoadingOverlay() {
-    // Hide the loading overlay container
-
+    // Add fade effect to the modal
     svgcontainer.classList.add("fade");
 
+    // Hide the modal after the fade effect is complete
     setTimeout(() => {
-        document.getElementById('svgModal').style.display = 'none';
+        svgcontainer.style.display = 'none';
         svgcontainer.classList.remove("fade");
-    }, 1000);
+    }, 1000); // Match this with the fade duration
+
+    // Hide the loading overlay
+    setTimeout(() => {
+        if (modalOverlay) {
+            modalOverlay.style.display = 'none';
+        }
+    }, 700); // Ensure this is enough to let the modal hide
 
     // Scroll to the intro-page container
-    document.getElementById('intro-page').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    var introPage = document.getElementById('intro-page');
+    if (introPage) {
+        introPage.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
 }
+
+// Example button to trigger exitLoadingOverlay function
+// <button onclick="exitLoadingOverlay()">Close Modal and Scroll</button>
+
 
 /* <div id="backtoTop" class="back-to-top" onclick="scrolltoTop()">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M575.8 255.5c0 18-15 32.1-32 32.1l-32 0 .7 160.2c0 2.7-.2 5.4-.5 8.1l0 16.2c0 22.1-17.9 40-40 40l-16 0c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1L416 512l-24 0c-22.1 0-40-17.9-40-40l0-24 0-64c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32 14.3-32 32l0 64 0 24c0 22.1-17.9 40-40 40l-24 0-31.9 0c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2l-16 0c-22.1 0-40-17.9-40-40l0-112c0-.9 0-1.9 .1-2.8l0-69.7-32 0c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/>
