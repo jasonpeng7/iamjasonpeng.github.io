@@ -95,7 +95,6 @@
     background-color: white;
     position: absolute;
     min-height: 0.1%; ;
-    min-width:100%; 
     left: 30px;
     top: 50%;
 }
@@ -147,12 +146,12 @@
         display: none;
     }
 
-    #section2-line-break1-mobile {top: 50%}
-    #section2-line-break2-mobile {top: 70%}
+    #section2-line-break1-mobile {top: 38%}
+    #section2-line-break2-mobile {top: 65%}
 
     #section2-line-break1-mobile, #section2-line-break2-mobile{
         display: block;
-        max-width: 20%;
+        min-width: 20%;
     }
 
     #section2-CHP, #section2-WSP, #section2-HMG{
