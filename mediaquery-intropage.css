@@ -238,16 +238,16 @@
         left: 30px;
     }
 
-    hi-my-fade{
+    #hi-my-fade{
         animation: fadeDown2 1s ease-out forwards;
     }
 
-    name-is-fade{
+    #name-is-fade{
         animation: fadeUp2 1s ease-out forwards;
     }
 
     .inner_container{
-        background-color: rgb(168, 96, 96);
+        background-color: rgb(96, 168, 137);
     }
 
     .passionate{
