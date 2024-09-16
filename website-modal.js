@@ -189,80 +189,51 @@ document.addEventListener('mousemove', (event) => {
 
 
 const leftEyebrow = document.getElementById('left-eyebrow'); // Select the left eyebrow
+const rightEyebrow = document.getElementById('right-eyebrow'); // Select the right eyebrow
 
 const leftEyebrowMaxLift = 4; // Maximum lift for the left eyebrow
 const leftMinEyebrowY = -20; // Minimum Y value for the left eyebrow to prevent it from going too low
 const maxLeftEyebrowAngle = -1; // Maximum angle when cursor is at the top (negative for leftward tilt)
 
-let leftEyebrowPos = { y: -10, angle: 0 }; // Initial left eyebrow position with angle
-
-// Function to update the left eyebrow position based on cursor movement
-function updateLeftEyebrowPosition(y) {
-    const faceRect = document.getElementById('left-eyebrow').getBoundingClientRect();
-    const faceCenterY = faceRect.top + faceRect.height / 2;
-
-    // Calculate eyebrow lift based on cursor Y position
-    const leftEyebrowLift = ((y - faceCenterY) / faceRect.height) * leftEyebrowMaxLift;
-
-    // New eyebrow position (ensure it doesn't go below leftMinEyebrowY)
-    const newLeftEyebrowPosY = Math.max(leftMinEyebrowY - leftEyebrowLift, leftMinEyebrowY);
-
-    // Smoothly interpolate to new position
-    leftEyebrowPos.y += (newLeftEyebrowPosY - leftEyebrowPos.y) * 0.5;
-
-    // Calculate rotation angle based on cursor Y position (cursor higher = more rotation)
-    const leftEyebrowAngle = ((y - faceCenterY) / faceRect.height) * maxLeftEyebrowAngle;
-
-    // Smoothly interpolate to the new angle
-    leftEyebrowPos.angle += (leftEyebrowAngle - leftEyebrowPos.angle) * 0.5;
-
-    // Apply the new position and rotation (adjust 'transform' for both translation and rotation)
-    leftEyebrow.style.transform = `translateY(${leftEyebrowPos.y}px) rotate(${leftEyebrowPos.angle}deg)`;
-}
-
-// Add mousemove event listener for the left eyebrow
-document.addEventListener('mousemove', (event) => {
-    updateLeftEyebrowPosition(event.clientY);
-});
-
-
-const rightEyebrow = document.getElementById('right-eyebrow'); // Select the right eyebrow
-
 const rightEyebrowMaxLift = 4; // Maximum lift for the right eyebrow
 const rightMinEyebrowY = -20; // Minimum Y value for the right eyebrow to prevent it from going too low
 const maxEyebrowAngle = 1; // Maximum angle when cursor is at the top
 
+let leftEyebrowPos = { y: -10, angle: 0 }; // Initial left eyebrow position with angle
 let rightEyebrowPos = { y: -10, angle: 0 }; // Initial right eyebrow position with angle
 
-// Function to update the right eyebrow position based on cursor movement
-function updateRightEyebrowPosition(y) {
-    const faceRect = document.getElementById('right-eyebrow').getBoundingClientRect();
-    const faceCenterY = faceRect.top + faceRect.height / 2;
+function updateEyebrowsPosition(y) {
+    // Function to update both eyebrows based on cursor movement
 
-    // Calculate eyebrow lift based on cursor Y position
-    const rightEyebrowLift = ((y - faceCenterY) / faceRect.height) * rightEyebrowMaxLift;
+    const leftFaceRect = leftEyebrow.getBoundingClientRect();
+    const leftFaceCenterY = leftFaceRect.top + leftFaceRect.height / 2;
+    const rightFaceRect = rightEyebrow.getBoundingClientRect();
+    const rightFaceCenterY = rightFaceRect.top + rightFaceRect.height / 2;
 
-    // New eyebrow position (ensure it doesn't go below rightMinEyebrowY)
+    // Calculate left eyebrow lift and angle
+    const leftEyebrowLift = ((y - leftFaceCenterY) / leftFaceRect.height) * leftEyebrowMaxLift;
+    const newLeftEyebrowPosY = Math.max(leftMinEyebrowY - leftEyebrowLift, leftMinEyebrowY);
+    const leftEyebrowAngle = ((y - leftFaceCenterY) / leftFaceRect.height) * maxLeftEyebrowAngle;
+
+    leftEyebrowPos.y += (newLeftEyebrowPosY - leftEyebrowPos.y) * 0.5;
+    leftEyebrowPos.angle += (leftEyebrowAngle - leftEyebrowPos.angle) * 0.5;
+
+    leftEyebrow.style.transform = `translateY(${leftEyebrowPos.y}px) rotate(${leftEyebrowPos.angle}deg)`;
+
+    // Calculate right eyebrow lift and angle
+    const rightEyebrowLift = ((y - rightFaceCenterY) / rightFaceRect.height) * rightEyebrowMaxLift;
     const newRightEyebrowPosY = Math.max(rightMinEyebrowY - rightEyebrowLift, rightMinEyebrowY);
+    const rightEyebrowAngle = ((y - rightFaceCenterY) / rightFaceRect.height) * maxEyebrowAngle;
 
-    // Smoothly interpolate to new position
     rightEyebrowPos.y += (newRightEyebrowPosY - rightEyebrowPos.y) * 0.5;
+    rightEyebrowPos.angle += (rightEyebrowAngle - rightEyebrowPos.angle) * 0.5;
 
-    // Calculate rotation angle based on cursor Y position (cursor higher = more rotation)
-    const eyebrowAngle = ((y - faceCenterY) / faceRect.height) * maxEyebrowAngle;
-
-    // Smoothly interpolate to the new angle
-    rightEyebrowPos.angle += (eyebrowAngle - rightEyebrowPos.angle) * 0.5;
-
-    // Apply the new position and rotation (adjust 'transform' for both translation and rotation)
     rightEyebrow.style.transform = `translateY(${rightEyebrowPos.y}px) rotate(${rightEyebrowPos.angle}deg)`;
-
-
 }
 
-// Add mousemove event listener for the right eyebrow
+// Add mousemove event listener for the eyebrows
 document.addEventListener('mousemove', (event) => {
-    updateRightEyebrowPosition(event.clientY);
+    updateEyebrowsPosition(event.clientY);
 });
 
 const mouth = document.getElementById('mouth'); // Select the mouth element
