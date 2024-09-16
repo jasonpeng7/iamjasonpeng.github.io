@@ -592,7 +592,7 @@
     #section2-hangman-svg {top: 70%; left: 7%;}
 
     #section2-CHP-content, #section2-WSP-content, #section2-HMG-content {
-        width: 20%;
+        max-width: 20%;
         font-size: 13px;
         left: 30px;
     }
@@ -628,4 +628,7 @@
         overflow: hidden;
     }
 
+    .inner_container{
+        background-color: rgb(103, 165, 145);
+    }
 }
