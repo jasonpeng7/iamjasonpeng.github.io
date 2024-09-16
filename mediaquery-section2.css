@@ -115,11 +115,6 @@
         left: 0px;
     }
 
-    .inner_container{
-        background-color: rgb(121, 82, 56);
-        
-    }
-
     #section2-line-break1 {top: 30%;}
     #section2-line-break2 {top: 60%;}
 
@@ -146,7 +141,7 @@
         display: none;
     }
 
-    #section2-line-break1-mobile {top: 43%}
+    #section2-line-break1-mobile {top: 41%}
     #section2-line-break2-mobile {top: 68%}
 
     #section2-line-break1-mobile, #section2-line-break2-mobile{
