@@ -183,8 +183,8 @@
     }
 
     .portrait2{
-        top: 13%;
-        left: -40%;
+        top: 9%;
+        left: -55%;
         display: block;
         animation: fadeIn 1s ease-out forwards, pop 1s ease-out forwards;
         animation-delay: 2.5s;
