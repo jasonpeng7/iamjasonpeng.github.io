@@ -12,6 +12,9 @@
     display: inline-flex; z-index: 2;
 }
 
+.about-me-back-filler{
+    display: none;
+}
 
 
 .about-me-content1{
@@ -31,25 +34,34 @@
     }
 
     .inner_container{
-        background-color: rgb(75, 109, 140);
+        background-color: rgb(75, 135, 140);
     }
 
     .about-me-content1{
         font-size: 13px;
         left: 30px;
-        width: 40%;
+        width: 30%;
         top: 38%;
     }
     
     .about-me-content2{
         font-size: 13px;
         left: 30px;
-        width: 40%;
-        top: 48%;
+        width: 30%;
+        top: 53%;
     }
 
     #frank-ruhl-libre-regular-iam{
         font-size: 45px;
         left: 30px;
+    }
+    
+    .about-me-back-filler{
+        display: block;
+        background-color: rgba(147, 175, 203, 0.395);
+        min-width: 30vh; min-height: 20vh;
+        top: 10%; left: 30px;
+        position: absolute;
+        z-index : 1;
     }
 }
