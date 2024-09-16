@@ -622,7 +622,7 @@ body{
 #myBtn{
     position: fixed;
     top:0; left:0;
-    z-index: 9998;
+    z-index: 3;
     border: none;
     outline: none;
     background-color: transparent;
