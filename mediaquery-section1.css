@@ -77,7 +77,6 @@
         left: 5%; top: 13%;
         font-size: 10px;
         width: 6vh;
-        background-color: wheat;
     }
     
     #hidden-ecs32a-content{
@@ -87,16 +86,15 @@
     }
     
     #hidden-ecs20{
-        right:-10%; top: 19%;
+        right:-12%; top: 19%;
         text-align: left;
         font-size: 10px;
         width: 6vh;
-        background-color: wheat;
 
     }
     
     #hidden-ecs20-content{
-        right:-54%; top: 19%;
+        right:-12%; top: 19%;
         font-size: 5px;
         width: 6vh;
 
@@ -117,20 +115,24 @@
     }
     
     #hidden-harvard{
-        right: -54%; top: 31%;
+        right: -12%; top: 31%;
         font-size: 10px;
         width: 6vh;
 
     }
     
     #hidden-harvard-content{
-        right: -54%; top: 31%;
+        right: -12%; top: 31%;
         font-size: 5px;
         width: 6vh;
 
     }
 
     .inner_container{
-        background-color: rgb(82, 140, 75);
+        background-color: rgb(86, 75, 140);
+    }
+
+    #hidden2{
+        left: 7%;
     }
 }
