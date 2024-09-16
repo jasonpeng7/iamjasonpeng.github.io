@@ -240,10 +240,26 @@
 
     #hi-my-fade{
         animation: fadeDown2 1s ease-out forwards;
+        font-size: 45px;
+        top: 400px;
+        left: 30px;
+        font-family: "Frank Ruhl Libre", serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        color:rgb(0, 21, 67);
     }
 
     #name-is-fade{
         animation: fadeUp2 1s ease-out forwards;
+        font-size: 45px;
+        top:450px;
+        left: 30px;
+        font-family: "Frank Ruhl Libre", serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        color:rgb(0, 21, 67);
     }
 
     .inner_container{
