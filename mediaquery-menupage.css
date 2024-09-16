@@ -259,7 +259,9 @@
 
 @media (max-width: 480px) {
 
-
+    .loader{
+        left: 30%;
+    }
 
     .modal-button-content1 {
         top: 41%;  /* Adjust the position dynamically */
