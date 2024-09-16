@@ -119,11 +119,11 @@
     #section2-line-break2 {top: 60%;}
 
     #section2-happymeter-svg {top: 15%; left: 6.5%;}
-    #section2-wordle-svg {top: 40%; left: 4.5%;}
+    #section2-wordle-svg {top: 40%; left: 4%;}
     #section2-hangman-svg {top: 70%; left: 7%;}
 
     #section2-CHP-content, #section2-WSP-content, #section2-HMG-content {
-        width: 20%;
+        width: 23%;
         font-size: 13px;
         left: 30px;
     }
