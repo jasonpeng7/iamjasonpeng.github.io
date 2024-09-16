@@ -197,10 +197,6 @@
 
 @media (max-width: 480px) {
 
-    .inner_container{
-        background-color: rgb(104, 175, 151);
-    }
-
     .portrait, #left-eye, #right-eye, #left-eyebrow, #right-eyebrow, #face2, #face, #mouth{
         display: none;
     }
