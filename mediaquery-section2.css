@@ -107,7 +107,7 @@
     }
 
     .inner_container{
-        background-color: rgb(93, 146, 164);
+        background-color: rgb(158, 164, 93);
         
     }
 
@@ -129,9 +129,13 @@
         left: 30px;
     }
 
+    #section2-CHP-content {top:17%}
+    #section2-CHP {top: 16%}
+
     #section2-CHP, #section2-WSP, #section2-HMG{
         width: 50%;
-        font-size:14px;
+        font-size:12px;
+        font-weight: 200;
         left: 30px;
     }
 
