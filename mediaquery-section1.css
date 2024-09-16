@@ -75,43 +75,43 @@
 
     #hidden-ecs32a{
         left: 5%; top: 13%;
-        font-size: 40px;
+        font-size: 10px;
     }
     
     #hidden-ecs32a-content{
         left: 5%; top: 13%;
-        font-size: 20px;
+        font-size: 5px;
     }
     
     #hidden-ecs20{
         right:-80%; top: 19%;
         text-align: left;
-        font-size: 40px;
+        font-size: 10px;
     }
     
     #hidden-ecs20-content{
         right:-80%; top: 19%;
-        font-size: 20px;
+        font-size: 5px;
     }
     
     #hidden-ecs32b{
         left: 5%; top: 25%;
-        font-size: 40px;
+        font-size: 10px;
     }
     
     #hidden-ecs32b-content{
         left: 5%; top: 25%;
-        font-size: 20px;
+        font-size: 5px;
     }
     
     #hidden-harvard{
         right: -80%; top: 31%;
-        font-size: 40px;
+        font-size: 10px;
     }
     
     #hidden-harvard-content{
         right: -80%; top: 31%;
-        font-size: 20px;
+        font-size: 5px;
     }
 
     .inner_container{
