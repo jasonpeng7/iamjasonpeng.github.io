@@ -107,13 +107,8 @@
     }
 
     .inner_container{
-        background-color: rgb(126, 93, 164);
+        background-color: rgb(93, 164, 113);
         
-    }
-
-    #section2-line-break1, #section2-line-break2{
-        width: 20vw;
-        left: 30px
     }
 
     #section2-line-break1 {top: 30%;}
@@ -150,6 +145,9 @@
         min-width:30%; 
         left: 30px;
     }
+
+    #section2-line-break1-mobile { top: 50%}
+    #section2-line-break2-mobile {top: 70%}
 
 
     #section2-CHP, #section2-WSP, #section2-HMG{
