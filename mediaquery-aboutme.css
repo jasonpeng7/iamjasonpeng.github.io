@@ -59,7 +59,7 @@
     .about-me-back-filler{
         display: block;
         background-color: rgba(147, 175, 203, 0.395);
-        min-width: 35vh; min-height: 20vh;
+        min-width: 35vh; min-height: 27vh;
         top: 20%; left: 30px;
         position: absolute;
         z-index : 1;
