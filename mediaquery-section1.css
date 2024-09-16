@@ -86,12 +86,12 @@
 
     /* Positioning for ECS32A and ECS32B (left-side elements) */
     #hidden-ecs32a, #hidden-ecs32a-content, #hidden-ecs32b, #hidden-ecs32b-content {
-        left: 3%;
+        left: 2%;
     }
 
     /* Positioning for ECS20 and Harvard (right-side elements) */
     #hidden-ecs20, #hidden-ecs20-content, #hidden-harvard, #hidden-harvard-content {
-        right: -14%;
+        right: -13%;
     }
 
     /* Individual top positions */
@@ -101,10 +101,10 @@
     #hidden-harvard, #hidden-harvard-content { top: 33%; }
 
     .inner_container {
-        background-color: rgb(75, 140, 106);
+        background-color: rgb(117, 75, 140);
     }
 
     .hidden2 {
-        left: 11%;
+        left: 10%;
     }
 }
