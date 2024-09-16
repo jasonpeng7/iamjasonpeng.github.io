@@ -34,20 +34,20 @@
     }
 
     .inner_container{
-        background-color: rgb(75, 135, 140);
+        background-color: rgb(121, 75, 140);
     }
 
     .about-me-content1{
         font-size: 13px;
         left: 30px;
-        width: 30%;
+        width: 20%;
         top: 38%;
     }
     
     .about-me-content2{
         font-size: 13px;
         left: 30px;
-        width: 30%;
+        width: 20%;
         top: 53%;
     }
 
@@ -59,8 +59,8 @@
     .about-me-back-filler{
         display: block;
         background-color: rgba(147, 175, 203, 0.395);
-        min-width: 30vh; min-height: 20vh;
-        top: 10%; left: 30px;
+        min-width: 35vh; min-height: 20vh;
+        top: 35%; left: 30px;
         position: absolute;
         z-index : 1;
     }
