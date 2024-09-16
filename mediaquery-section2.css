@@ -117,7 +117,7 @@
     }
 
     .inner_container{
-        background-color: rgb(93, 93, 164);
+        background-color: rgb(118, 164, 93);
         
     }
 
@@ -147,12 +147,12 @@
         display: none;
     }
 
-    #section2-line-break1-mobile { top: 40%; display: block;}
-    #section2-line-break2-mobile {top: 65%; display: block;}
+    #section2-line-break1-mobile { top: 40%; display: block; position: absolute;}
+    #section2-line-break2-mobile {top: 65%; display: block; position: absolute;}
 
 
     #section2-CHP, #section2-WSP, #section2-HMG{
-        width: 20%;
+        max-width: 10%;
         font-size:12px;
         font-weight: 200;
         left: 30px;
