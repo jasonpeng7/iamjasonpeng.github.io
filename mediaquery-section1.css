@@ -67,6 +67,257 @@
     color: rgb(0, 21, 67);
 }
 
+@media (max-width: 1200px) {    
+    #hidden-ecs32a,
+    #hidden-ecs32a-content {
+        left: 10%;
+        top: 13%;
+    }
+    
+    #hidden-ecs20,
+    #hidden-ecs20-content {
+        right: -42%;
+        top: 19%;
+    }
+    
+    #hidden-ecs32b,
+    #hidden-ecs32b-content {
+        left: 10%;
+        top: 25%;
+    }
+    
+    #hidden-harvard,
+    #hidden-harvard-content {
+        right: -42%;
+        top: 31%;
+    }
+    
+    .hidden2 {
+        left: 35.5%;
+    }
+}
+
+@media (max-width: 1100px) {
+    /* Common styles for elements with similar properties */
+    #hidden-ecs32a,
+    #hidden-ecs32a-content,
+    #hidden-ecs20,
+    #hidden-ecs20-content,
+    #hidden-ecs32b,
+    #hidden-ecs32b-content,
+    #hidden-harvard,
+    #hidden-harvard-content {
+        width: 15%;
+        font-size: 15px;
+    }
+
+    /* Specific styles */
+    #hidden-ecs32a,
+    #hidden-ecs32a-content {
+        left: 10%;
+        top: 13%;
+    }
+
+    #hidden-ecs20,
+    #hidden-ecs20-content {
+        right: -35%;
+        top: 17%;
+    }
+
+    #hidden-ecs32b,
+    #hidden-ecs32b-content {
+        left: 10%;
+        top: 21%;
+    }
+
+    #hidden-harvard,
+    #hidden-harvard-content {
+        right: -35%;
+        top: 27%;
+    }
+
+    .hidden2 {
+        left: 27.5%;
+    }
+}
+
+
+@media (max-width: 800px) {
+    /* Common styles for elements with similar properties */
+    #hidden-ecs32a,
+    #hidden-ecs32a-content,
+    #hidden-ecs20,
+    #hidden-ecs20-content,
+    #hidden-ecs32b,
+    #hidden-ecs32b-content,
+    #hidden-harvard,
+    #hidden-harvard-content {
+        width: 12%;
+        font-size: 12px;
+    }
+
+    /* Specific styles */
+    #hidden-ecs32a,
+    #hidden-ecs32a-content {
+        left: 10%;
+        top: 15%;
+    }
+
+    #hidden-ecs20,
+    #hidden-ecs20-content {
+        right: -30%;
+        top: 19%;
+    }
+
+    #hidden-ecs32b,
+    #hidden-ecs32b-content {
+        left: 10%;
+        top: 23%;
+    }
+
+    #hidden-harvard,
+    #hidden-harvard-content {
+        right: -30%;
+        top: 29%;
+    }
+
+    .hidden2 {
+        left: 23.5%;
+    }
+}
+
+@media (max-width: 700px) {
+    /* Common styles for elements with similar properties */
+    #hidden-ecs32a,
+    #hidden-ecs32a-content,
+    #hidden-ecs20,
+    #hidden-ecs20-content,
+    #hidden-ecs32b,
+    #hidden-ecs32b-content,
+    #hidden-harvard,
+    #hidden-harvard-content {
+        width: 12%;
+        font-size: 11px;
+    }
+
+    /* Specific styles */
+    #hidden-ecs32a,
+    #hidden-ecs32a-content {
+        left: 6%;
+        top: 18%;
+    }
+
+    #hidden-ecs20,
+    #hidden-ecs20-content {
+        right: -26%;
+        top: 22%;
+    }
+
+    #hidden-ecs32b,
+    #hidden-ecs32b-content {
+        left: 6%;
+        top: 26%;
+    }
+
+    #hidden-harvard,
+    #hidden-harvard-content {
+        right: -26%;
+        top: 32%;
+    }
+
+    .hidden2 {
+        left: 19%;
+    }
+}
+
+@media (max-width: 600px) {
+    /* Common styles for elements with similar properties */
+    #hidden-ecs32a,
+    #hidden-ecs32a-content,
+    #hidden-ecs20,
+    #hidden-ecs20-content,
+    #hidden-ecs32b,
+    #hidden-ecs32b-content,
+    #hidden-harvard,
+    #hidden-harvard-content {
+        width: 11%;
+        font-size: 11px;
+    }
+
+    /* Specific styles */
+    #hidden-ecs32a,
+    #hidden-ecs32a-content {
+        left: 3%;
+        top: 18%;
+    }
+
+    #hidden-ecs20,
+    #hidden-ecs20-content {
+        right: -23%;
+        top: 22%;
+    }
+
+    #hidden-ecs32b,
+    #hidden-ecs32b-content {
+        left: 3%;
+        top: 26%;
+    }
+
+    #hidden-harvard,
+    #hidden-harvard-content {
+        right: -23%;
+        top: 32%;
+    }
+
+    .hidden2 {
+        left: 16%;
+    }
+}
+
+@media (max-width: 600px) {
+    /* Common styles for elements with similar properties */
+    #hidden-ecs32a,
+    #hidden-ecs32a-content,
+    #hidden-ecs20,
+    #hidden-ecs20-content,
+    #hidden-ecs32b,
+    #hidden-ecs32b-content,
+    #hidden-harvard,
+    #hidden-harvard-content {
+        width: 10%;
+        font-size: 10px;
+    }
+
+    /* Specific styles */
+    #hidden-ecs32a,
+    #hidden-ecs32a-content {
+        left: 3%;
+        top: 18%;
+    }
+
+    #hidden-ecs20,
+    #hidden-ecs20-content {
+        right: -20%;
+        top: 22%;
+    }
+
+    #hidden-ecs32b,
+    #hidden-ecs32b-content {
+        left: 3%;
+        top: 26%;
+    }
+
+    #hidden-harvard,
+    #hidden-harvard-content {
+        right: -20%;
+        top: 32%;
+    }
+
+    .hidden2 {
+        left: 14%;
+    }
+}
+
 @media (max-width: 480px) {
     .section1-title-background {
         left: 30px;
