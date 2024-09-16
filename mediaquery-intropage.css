@@ -219,19 +219,19 @@
     }
 
     .intro-menu{
-        left: 1%
+        left: -1%
     }
 
     #menu-break{
-        left: 0
+        left: -2%
     }
 
     #myBtn{
-        left: -1%;
+        left: -3%;
     }
 
     .inner_container{
-        background-color: rgb(94, 151, 184);
+        background-color: rgb(94, 100, 184);
     }
 
 }
