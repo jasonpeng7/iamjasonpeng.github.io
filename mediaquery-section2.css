@@ -55,19 +55,20 @@
     #section2-python{
         left: 30px;
         max-width: 10px;
+        font-size: 10px;
     }
 
     #section2-happymeter-svg, #section2-hangman-svg{
-        width: 5%;
+        width: 12%;
         left: 30px;
     }
 
     #section2-wordle-svg{
-        width: 5%;
+        width: 17%;
         left: 20px;
     }
 
     .inner_container{
-        background-color: rgb(99, 164, 93);
+        background-color: rgb(93, 164, 141);
     }
 }
