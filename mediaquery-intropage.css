@@ -230,14 +230,24 @@
         font-size: 45px;
         top:450px;
         left: 30px;
-        animation: fadeUp2 1s ease-out forwards;
     }
 
     .hi-my2{
         font-size: 45px;
         top: 400px;
         left: 30px;
+    }
+
+    hi-my-fade{
         animation: fadeDown2 1s ease-out forwards;
+    }
+
+    name-is-fade{
+        animation: fadeUp2 1s ease-out forwards;
+    }
+
+    .inner_container{
+        background-color: rgb(168, 96, 96);
     }
 
     .passionate{
