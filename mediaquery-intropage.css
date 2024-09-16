@@ -155,6 +155,7 @@
 }
 
 
+
 @media (max-width: 480px) {
 
     .portrait, #left-eye, #right-eye, #left-eyebrow, #right-eyebrow, #face2, #face, #mouth{
@@ -169,7 +170,7 @@
         top: 13%;
         left: -40%;
         display: block;
-        animation: fadeIn 1s ease-out forwards;
+        animation: fadeIn 1s ease-out forwards, popOut 1s ease-out forwards;
         animation-delay: 2.5s;
         opacity: 0;
     }

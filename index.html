@@ -611,21 +611,11 @@
                         var textContainer = document.getElementById('animation-hard-up');
 
                         function animateContainerUp() {
-                            // Check if the screen width is 480px or less
-                            if (window.matchMedia('(max-width: 480px)').matches) {
-                                // Apply delay only for small screens
-                                setTimeout(() => {
-                                    textContainer.style.transition = 'opacity 1s ease-out, transform 1s ease-out';
-                                    textContainer.style.opacity = '0';
-                                    textContainer.style.transform = 'translateY(40px)';
-                                }, 4000); // 1 second delay (you can adjust this value)
-                            } else {
-                                // No delay for larger screens
-                                textContainer.style.transition = 'opacity 1s ease-out, transform 1s ease-out';
-                                textContainer.style.opacity = '0';
-                                textContainer.style.transform = 'translateY(40px)';
-                            }
+                            textContainer.style.transition = 'opacity 1s ease-out, transform 1s ease-out';
+                            textContainer.style.opacity = '0';
+                            textContainer.style.transform = 'translateY(40px)';
                         }
+
                         const textContainers = document.querySelectorAll('.animation-slide-up');
 
                         // Function to animate elements
