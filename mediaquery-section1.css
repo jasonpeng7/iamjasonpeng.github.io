@@ -80,7 +80,7 @@
     }
 
     #hidden-ecs32a-content, #hidden-ecs20-content, #hidden-ecs32b-content, #hidden-harvard-content {
-        font-size: 10px;
+        font-size: 12px;
         width: 16vh;
     }
 
@@ -103,11 +103,7 @@
     #hidden-ecs20, #hidden-ecs20-content { top: 21%; }
     #hidden-ecs32b, #hidden-ecs32b-content { top: 27%; }
     #hidden-harvard, #hidden-harvard-content { top: 33%; }
-
-    .inner_container {
-        background-color: rgb(117, 75, 140);
-    }
-
+    
     .hidden2 {
         left: 9.5%;
     }
