@@ -99,10 +99,10 @@
     }
 
     /* Individual top positions */
-    #hidden-ecs32a, #hidden-ecs32a-content { top: 11%; }
-    #hidden-ecs20, #hidden-ecs20-content { top: 17%; }
-    #hidden-ecs32b, #hidden-ecs32b-content { top: 24%; }
-    #hidden-harvard, #hidden-harvard-content { top: 30%; }
+    #hidden-ecs32a, #hidden-ecs32a-content { top: 8%; }
+    #hidden-ecs20, #hidden-ecs20-content { top: 14%; }
+    #hidden-ecs32b, #hidden-ecs32b-content { top: 20%; }
+    #hidden-harvard, #hidden-harvard-content { top: 26%; }
     
     .hidden2 {
         left: 9.5%;
