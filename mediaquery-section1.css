@@ -80,8 +80,8 @@
     }
 
     #hidden-ecs32a-content, #hidden-ecs20-content, #hidden-ecs32b-content, #hidden-harvard-content {
-        font-size: 7.5px;
-        width: 20vh;
+        font-size: 10px;
+        width: 16vh;
     }
 
     /* Positioning for ECS32A and ECS32B (left-side elements) */
@@ -91,7 +91,7 @@
 
     /* Positioning for ECS20 and Harvard (right-side elements) */
     #hidden-ecs20, #hidden-ecs20-content, #hidden-harvard, #hidden-harvard-content {
-        right: -11%;
+        right: -12.5%;
     }
 
     /* Individual top positions */
@@ -101,10 +101,10 @@
     #hidden-harvard, #hidden-harvard-content { top: 33%; }
 
     .inner_container {
-        background-color: rgb(78, 75, 140);
+        background-color: rgb(75, 140, 140);
     }
 
     .hidden2 {
-        left: 11%;
+        left: 9%;
     }
 }
