@@ -107,7 +107,7 @@
     }
 
     .inner_container{
-        background-color: rgb(93, 164, 113);
+        background-color: rgb(93, 93, 164);
         
     }
 
@@ -142,7 +142,7 @@
         background-color: white;
         position: absolute;
         min-height: 0.1%; ;
-        min-width:30%; 
+        min-width:100%; 
         left: 30px;
     }
 
