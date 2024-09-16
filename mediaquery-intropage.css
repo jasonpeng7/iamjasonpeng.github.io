@@ -248,6 +248,7 @@
         font-weight: 300;
         font-style: normal;
         color:rgb(0, 21, 67);
+        position: absolute;
     }
 
     #name-is-fade{
@@ -260,6 +261,7 @@
         font-weight: 300;
         font-style: normal;
         color:rgb(0, 21, 67);
+        position: absolute;
     }
 
     .inner_container{
