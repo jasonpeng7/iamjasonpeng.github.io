@@ -662,16 +662,6 @@ body{
     cursor:pointer;
 } */
 
-.section2-content{
-    line-height:1.6; 
-    width:100%; 
-    left: 39%;
-    text-align: left;
-    position: absolute;
-    font-size: 15px; 
-    padding: 20px;
-    z-index: 2;
-}
 
 .section2-content-content{
     position: absolute;
@@ -714,11 +704,6 @@ font-style: normal;
 color: rgb(0,21,67);
 }
 
-#section2-sgv-strokecolor{
-    stroke: rgb(167, 199, 231);
-    fill: rgb(167, 199, 231);
-    z-index: 2;
-}
 
 
 #edge{

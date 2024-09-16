@@ -1,0 +1,74 @@
+.section2-python{
+    position:absolute;
+    margin: 60px;
+    top:6%; left:0;
+    font-weight: 500;
+
+    font-family: "Frank Ruhl Libre", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color:rgb(0, 21, 67);
+}
+
+#section2-happymeter-svg{
+    position:absolute; 
+    width: 15%; 
+    left:17%; 
+    top: 16%;
+}
+
+#section2-wordle-svg{
+    width: 20%; 
+    top:43%; 
+    left:15% ;
+    position: absolute;
+}
+
+#section2-hangman-svg{
+    width:15%;
+    position: absolute; 
+    left: 17%; 
+    bottom:7%;
+}
+#section2-CHP, #section2-WSP, #section2-HMG {
+    font-family: "Frank Ruhl Libre", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(0, 21, 67);
+    line-height: 1.6;
+    width: 100%;
+    left: 39%;
+    text-align: left;
+    position: absolute;
+    font-size: 15px;
+    padding: 20px;
+    z-index: 2;
+}
+
+/* Individual top positions */
+#section2-CHP { top: 15.5%; }
+#section2-WSP { top: 44.5%; }
+#section2-HMG { top: 71.5%; }
+
+@media (max-width: 480px) {
+    .section2-python{
+        left: 30px;
+        max-width: 100px;
+        font-size: 10px;
+    }
+
+    #section2-happymeter-svg, #section2-hangman-svg{
+        width: 12%;
+        left: 30px;
+    }
+
+    #section2-wordle-svg{
+        width: 17%;
+        left: 20px;
+    }
+
+    .inner_container{
+        background-color: rgb(93, 113, 164);
+    }
+}
