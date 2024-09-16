@@ -107,7 +107,7 @@
     }
 
     .inner_container{
-        background-color: rgb(146, 93, 164);
+        background-color: rgb(93, 143, 164);
         
     }
 
@@ -120,8 +120,8 @@
     #section2-line-break2 {top: 60%;}
 
     #section2-happymeter-svg {top: 15%;}
-    #section2-wordle-svg {top: 30%}
-    #section2-hangman-svg {top: 45%}
+    #section2-wordle-svg {top: 45%}
+    #section2-hangman-svg {top: 70%}
 
     #section2-CHP-content, #section2-WSP-content, #section2-HMG-content {
         width: 20%;
@@ -129,14 +129,14 @@
         left: 30px;
     }
 
-    #section2-CHP-content {top:24%}
-    #section2-CHP {top: 27%}
+    #section2-CHP-content {top:30%}
+    #section2-CHP {top: 25%}
 
-    #section2-WSP {top: 39%}
-    #section2-WSP-content {top: 42%}
+    #section2-WSP {top: 60%}
+    #section2-WSP-content {top: 65%}
 
-    #section2-HMG {top: 48%}
-    #section2-HMG-content {top: 51%}
+    #section2-HMG {top: 85%}
+    #section2-HMG-content {top: 90%}
 
 
     #section2-CHP, #section2-WSP, #section2-HMG{
