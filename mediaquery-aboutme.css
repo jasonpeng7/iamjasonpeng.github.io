@@ -287,10 +287,11 @@
     #frank-ruhl-libre-regular-iam{
         font-size: 45px;
         left: 30px;
+        top: -1%;
     }
 
     .inner_container{
-        background-color: rgb(101, 94, 165);
+        background-color: rgb(94, 165, 125);
     }
     
     .about-me-back-filler{
