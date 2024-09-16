@@ -155,4 +155,8 @@
         left: 30px;
     }
 
+    body{
+        overflow: hidden;
+    }
+
 }
