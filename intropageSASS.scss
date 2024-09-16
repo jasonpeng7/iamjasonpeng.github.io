@@ -1,0 +1,54 @@
+$height-step: 50px;
+$max-height: 750px;
+$max-step: 15;
+
+@for $i from 0 through $max-step {
+  $height: $max-height - ($i * $height-step);
+  $face2-offset: 1.5% * $i;
+  $left-eyebrow-offset: 1.5% + 0.5% * $i;
+  $right-eyebrow-offset: 1.5% * $i;
+  $mouth-offset: 1% * $i;
+
+  @media (max-height: $height) {
+    #face2 {
+      right: calc(15% + #{$face2-offset});
+    }
+    #left-eyebrow {
+      right: calc(23% + #{$left-eyebrow-offset});
+    }
+    #right-eyebrow {
+      right: calc(15.5% + #{$right-eyebrow-offset});
+    }
+    .mouth-container {
+      left: calc(17% - #{$mouth-offset});
+    }
+  }
+}
+
+$width-step: 60px;
+$max-width: 1400px;
+$max-step: 40; // This will generate 5 media queries, from 1400px to 1190px
+
+@for $i from 1 through $max-step {
+  $width: $max-width - ($i * $width-step);
+  $offset: 1% * $i;
+  $left-mouth-offset: 0.5% * $i;
+
+  @media (max-width: $width) {
+    #face2 {
+      right: calc(15% - #{$offset});
+    }
+
+    #left-eyebrow {
+      right: calc(23% - #{$offset});
+    }
+
+    #right-eyebrow {
+      right: calc(15.5% - #{$offset});
+    }
+
+    .mouth-container {
+      left: calc(17% + #{$left-mouth-offset});
+    }
+  }
+}
