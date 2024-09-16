@@ -675,11 +675,11 @@ body{
 
 
 #frank-ruhl-libre-regular {
-font-family: "Frank Ruhl Libre", serif;
-font-optical-sizing: auto;
-font-weight: 300;
-font-style: normal;
-color:rgb(0, 21, 67);
+    font-family: "Frank Ruhl Libre", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color:rgb(0, 21, 67);
 }
 
 .red-hat-display-regular {

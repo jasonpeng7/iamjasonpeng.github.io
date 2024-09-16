@@ -249,6 +249,7 @@
         font-style: normal;
         color:rgb(0, 21, 67);
         position: absolute;
+        animation-delay: 0.5s;
     }
 
     #name-is-fade{
@@ -262,10 +263,7 @@
         font-style: normal;
         color:rgb(0, 21, 67);
         position: absolute;
-    }
-
-    .inner_container{
-        background-color: rgb(96, 168, 137);
+        animation-delay: 0.8s;
     }
 
     .passionate{
