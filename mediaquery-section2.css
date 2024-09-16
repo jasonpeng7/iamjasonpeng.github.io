@@ -71,8 +71,8 @@
 
 @media (max-width: 480px) {
     #section2-python{
-        left: 0;
-        max-width: 40px;
+        left: -10px;
+        max-width: 70px;
     }
 
     #section2-happymeter-svg, #section2-hangman-svg{
@@ -82,16 +82,17 @@
 
     #section2-wordle-svg{
         width: 17%;
-        left: 20px;
+        left: 0px;
     }
 
     .inner_container{
-        background-color: rgb(95, 93, 164);
+        background-color: rgb(93, 164, 123);
         
     }
 
     #section2-line-break1, #section2-line-break2{
-        width: 50vh;
+        width: 20vh;
+        left: 30px
     }
 
     #section2-line-break1 {top: 30%;}
