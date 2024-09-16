@@ -171,6 +171,30 @@
 
 }
 
+@keyframes fadeUp2{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes fadeDown2{
+    from{
+        opacity:0;
+        transform:translateY(-40px);
+    }
+    
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
 @media (max-width: 480px) {
 
     .portrait, #left-eye, #right-eye, #left-eyebrow, #right-eyebrow, #face2, #face, #mouth{
@@ -191,15 +215,25 @@
     }
 
     .name-is{
-        font-size: 45px;
-        top:450px;
-        left: 30px;
+        display: none;
     }
 
     .hi-my{
+        display: none;
+    }
+
+    .name-is2{
+        font-size: 45px;
+        top:450px;
+        left: 30px;
+        animation: fadeUp2 1s ease-out forwards;
+    }
+
+    .hi-my2{
         font-size: 45px;
         top: 400px;
         left: 30px;
+        animation: fadeDown2 1s ease-out forwards;
     }
 
     .passionate{
