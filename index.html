@@ -49,6 +49,18 @@
                 }
             }
 
+            @keyframes fadeUp{
+                from{
+                    opacity:0;
+                    transform:translateY(40px);
+                }
+                
+                to{
+                    opacity:1;
+                    transform:translateY(0);
+                }
+            }
+
             @keyframes fadeIn {
                 from {
                     opacity: 0;
@@ -84,7 +96,7 @@
 
             .animation-slide-up {
                 opacity: 0;
-                transform: translateY(40px);
+                animation: fadeUp 1s ease-in-out forwards 0.7s;
             }
 
             .animation-slide-left{
@@ -601,7 +613,7 @@
     
                     <div class="animation-slide-up" id="jason-container">
                         <h1 class="name-is">
-                        name is <span style="font-weight:650;">Jason</span><span style="color: rgb(167, 199, 231); font-weight: 800;">.</span></h1>
+                        name is <span style="font-weight:750;">Jason</span><span style="color: rgb(167, 199, 231); font-weight: 800;">.</span></h1>
                     </div>
 
 

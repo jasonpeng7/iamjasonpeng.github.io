@@ -260,7 +260,7 @@
 @media (max-width: 480px) {
 
     .loader{
-        left: 45%;
+        left: 43.5%;
     }
 
     .modal-button-content1 {
@@ -330,6 +330,6 @@
     }
 
     .inner_container{
-        background-color: rgb(97, 160, 127);
+        background-color: rgb(118, 160, 97);
     }
 }
