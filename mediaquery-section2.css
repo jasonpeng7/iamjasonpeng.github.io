@@ -129,4 +129,10 @@
         left: 30px;
     }
 
+    #section2-CHP, #section2-WSP, #section2-HMG{
+        width: 20%;
+        font-size:17px;
+        left: 30px;
+    }
+
 }
