@@ -90,6 +90,16 @@
 #section2-WSP-content { top: 49.5%; }
 #section2-HMG-content { top: 76.5%; }
 
+#section2-line-break1-mobile, #section2-line-break2-mobile{
+    display: none;
+    background-color: white;
+    position: absolute;
+    min-height: 0.1%; ;
+    min-width:100%; 
+    left: 30px;
+    top: 50%;
+}
+
 
 @media (max-width: 480px) {
     #section2-python{
@@ -137,17 +147,8 @@
         display: none;
     }
 
-    #section2-line-break1-mobile, #section2-line-break2-mobile{
-        display: block;
-        background-color: white;
-        position: absolute;
-        min-height: 0.1%; ;
-        min-width:100%; 
-        left: 30px;
-    }
-
-    #section2-line-break1-mobile { top: 50%}
-    #section2-line-break2-mobile {top: 70%}
+    #section2-line-break1-mobile { top: 50%; display: block;}
+    #section2-line-break2-mobile {top: 70%; display: block;}
 
 
     #section2-CHP, #section2-WSP, #section2-HMG{
