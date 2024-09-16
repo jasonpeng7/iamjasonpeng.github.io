@@ -260,7 +260,7 @@
 @media (max-width: 480px) {
 
     .loader{
-        left: 37%;
+        left: 30%;
     }
 
     .modal-button-content1 {
@@ -321,7 +321,15 @@
         top: 20%;
     }
 
-    .foreground-tree1, .foreground-tree2, .foreground-tree3, .foreground-tree4{
+    .foreground-tree1, .foreground-tree2, .foreground-tree3{
         top: 3%;
+    }
+
+    .tree4{
+        display: none;
+    }
+
+    .inner_container{
+        background-color: rgb(97, 97, 160);
     }
 }
