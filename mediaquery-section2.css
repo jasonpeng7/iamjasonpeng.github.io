@@ -118,9 +118,9 @@
     #section2-line-break1 {top: 30%;}
     #section2-line-break2 {top: 60%;}
 
-    #section2-happymeter-svg {top: 15%; left: 15%;}
-    #section2-wordle-svg {top: 40%; left: 15%;}
-    #section2-hangman-svg {top: 70%; left: 15%;}
+    #section2-happymeter-svg {top: 15%; left: 6%;}
+    #section2-wordle-svg {top: 40%; left: 6%;}
+    #section2-hangman-svg {top: 70%; left: 6%;}
 
     #section2-CHP-content, #section2-WSP-content, #section2-HMG-content {
         width: 20%;
