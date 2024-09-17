@@ -1,11 +1,10 @@
 @media only screen 
   and (min-device-width: 1024px) 
   and (max-device-width: 1366px) 
-  and (-webkit-min-device-pixel-ratio: 1.5) 
   and (orientation: portrait) {
 
     .inner_container {
-        background-color: rgb(93, 165, 107); /* Apply the desired styles */
+        background-color: rgb(146, 165, 93); /* Apply the desired styles */
     }
 
     .portrait2 svg{
@@ -32,7 +31,7 @@
     }
 
     .portrait2{
-        top: -5%;
+        top: -10%;
         left: -10%;
         display: block;
         opacity: 1;
@@ -66,7 +65,7 @@
     }
 
     .portrait2{
-        top: -5%;
+        top: -7%;
         left: -15%;
         display: block;
         opacity: 1;
@@ -129,8 +128,8 @@
     }
 
     .portrait2 svg{
-        width: 75vh;
-        height: 75vh;
+        width: 70vh;
+        height: 70vh;
     }
 
     .portrait2{
@@ -196,8 +195,8 @@
     }
 
     .portrait2 svg {
-        width: 50vh;
-        height: 50vh;
+        width: 48vh;
+        height: 48vh;
     }
 
     .portrait2 {
