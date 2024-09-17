@@ -1301,3 +1301,13 @@ a:hover{
     bottom: 12%;
     left: 20%;
 }
+
+#section2-background {
+    background-color: rgba(147, 175, 203, 0.395); 
+    min-width: 50%; 
+    min-height: 25%; 
+    top: 30%;
+    right: 2.5%; 
+    position: absolute; 
+    z-index: 1;
+}
