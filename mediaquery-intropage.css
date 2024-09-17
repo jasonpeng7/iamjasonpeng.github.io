@@ -1,4 +1,4 @@
-@media (min-height: 1100px) {
+/* @media (min-height: 1100px) {
     .inner_container{
         background-color: rgb(153, 255, 127);
     }
@@ -26,7 +26,7 @@
         font-size: 100px;
         top: 700px;
     }
-}
+} */
 
 
 @media (max-width: 1300px){
