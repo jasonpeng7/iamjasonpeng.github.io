@@ -1,6 +1,11 @@
-@media (min-height: 1366px) {
+@media (min-height: 1350px) {
     .inner_container{
         background-color: aquamarine;
+    }
+
+    .portrait2 svg{
+        width: 120vh;
+        height: 120vh;
     }
 }
 
