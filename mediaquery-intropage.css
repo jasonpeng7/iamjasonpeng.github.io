@@ -1,11 +1,30 @@
-@media (min-height: 1000px) {
+@media (min-height: 1300px) {
     .inner_container{
-        background-color: aquamarine;
+        background-color: rgb(127, 146, 255);
     }
 
     .portrait2 svg{
-        width: 120vh;
-        height: 120vh;
+        width: 100vh;
+        height: 100vh;
+    }
+
+    .portrait2{
+        top: -10%;
+        left: -30%;
+        display: block;
+        opacity: 1;
+    }
+
+    .name-is{
+        width: 70%;
+        font-size: 95px;
+        top: 600px;
+    }
+
+    .hi-my{
+        width: 50%;
+        font-size: 95px;
+        top: 700px;
     }
 }
 
