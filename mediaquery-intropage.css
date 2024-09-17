@@ -1,8 +1,14 @@
-@media (max-height: 1350px) {
-    .inner_container{
-        background-color: rgb(122, 170, 154);
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5) 
+  and (orientation: portrait) {
+
+    .inner_container {
+        background-color: rgb(122, 170, 154); /* Apply the desired styles */
     }
 }
+
 @media (max-width: 1300px){
     .portrait, #left-eye, #right-eye, #left-eyebrow, #right-eyebrow, #face2, #face, #mouth{
         display: none;
