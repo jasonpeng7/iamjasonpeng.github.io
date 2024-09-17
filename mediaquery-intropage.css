@@ -1,6 +1,6 @@
 @media (min-height: 1100px) {
     .inner_container{
-        background-color: rgb(127, 146, 255);
+        background-color: rgb(153, 255, 127);
     }
 
     .portrait2 svg{
@@ -10,20 +10,20 @@
 
     .portrait2{
         top: -10%;
-        left: -30%;
+        left: -70%;
         display: block;
         opacity: 1;
     }
 
     .name-is{
         width: 70%;
-        font-size: 95px;
+        font-size: 100px;
         top: 600px;
     }
 
     .hi-my{
         width: 50%;
-        font-size: 95px;
+        font-size: 100px;
         top: 700px;
     }
 }
