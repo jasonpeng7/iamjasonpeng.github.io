@@ -1,0 +1,12 @@
+$i: 1430;
+@use "sass:math";
+
+@while $i >= 550 {
+    @media (max-width: #{$i}px) {
+        .linkedin-icon2 { left: #{87% - math.div((1430 - $i), 14)}; }
+        .instagram-icon2 { left: #{90% - math.div((1430 - $i), 14)}; }
+        .mail-icon2 { left: #{93% - math.div((1430 - $i), 14)}; }
+        .resume-icon2 { left: #{96% - math.div((1430 - $i), 14)}; }
+    }
+    $i: $i - 10; // Decrement by 10px
+}
