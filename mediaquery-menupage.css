@@ -216,7 +216,7 @@
     }
     .modal-button-content3 {
         top: 86%;  /* Adjust the position dynamically */
-        left: 30%; /* Adjust the left margin for smaller screens */
+        left: 32%; /* Adjust the left margin for smaller screens */
         min-width: 10vw;
         font-size: 80%;
 
@@ -224,7 +224,7 @@
     }
     .modal-button-content4 {
         top: 56%;  /* Adjust the position dynamically */
-        left: 34%; /* Adjust the left margin for smaller screens */
+        left: 38%; /* Adjust the left margin for smaller screens */
         min-width: 20vw;
         font-size: 80%;
     }
