@@ -713,7 +713,23 @@
         overflow: hidden;
     }
 
-    #section2-background{
-        right: 30%;
+    #section2-background {
+        min-width: 20%; 
+        min-height: 55%; 
+        top: 21%;
+        right: 56%; 
+        z-index: 0.5;
+    }
+
+    .inner_container{
+        background-color: rgb(92, 156, 156);
+    }
+
+    #section2-background {
+        min-width: 20%; 
+        min-height: 55%; 
+        top: 21%;
+        right: 60%; 
+        z-index: 0.5;
     }
 }
