@@ -1,7 +1,7 @@
 $i: 1430;
 @use "sass:math";
 
-@while $i >= 550 {
+@while $i >= 400 {
     @media (max-width: #{$i}px) {
         .linkedin-icon2 { left: #{87% - math.div((1430 - $i), 14)}; }
         .instagram-icon2 { left: #{90% - math.div((1430 - $i), 14)}; }

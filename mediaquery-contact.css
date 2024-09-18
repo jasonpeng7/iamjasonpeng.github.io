@@ -1245,15 +1245,225 @@
 }
 @media (max-width: 550px) {
   .linkedin-icon2 {
-    left: 20.1428571429%;
+    left: 24.1428571429%;
   }
   .instagram-icon2 {
-    left: 23.1428571429%;
+    left: 27.1428571429%;
   }
   .mail-icon2 {
-    left: 26.1428571429%;
+    left: 30.1428571429%;
   }
   .resume-icon2 {
-    left: 29.1428571429%;
+    left: 33.1428571429%;
+  }
+}
+@media (max-width: 540px) {
+  .linkedin-icon2 {
+    left: 23.4285714286%;
+  }
+  .instagram-icon2 {
+    left: 26.4285714286%;
+  }
+  .mail-icon2 {
+    left: 29.4285714286%;
+  }
+  .resume-icon2 {
+    left: 32.4285714286%;
+  }
+}
+@media (max-width: 530px) {
+  .linkedin-icon2 {
+    left: 22.7142857143%;
+  }
+  .instagram-icon2 {
+    left: 25.7142857143%;
+  }
+  .mail-icon2 {
+    left: 28.7142857143%;
+  }
+  .resume-icon2 {
+    left: 31.7142857143%;
+  }
+}
+@media (max-width: 520px) {
+  .linkedin-icon2 {
+    left: 22%;
+  }
+  .instagram-icon2 {
+    left: 25%;
+  }
+  .mail-icon2 {
+    left: 28%;
+  }
+  .resume-icon2 {
+    left: 31%;
+  }
+}
+@media (max-width: 510px) {
+  .linkedin-icon2 {
+    left: 21.2857142857%;
+  }
+  .instagram-icon2 {
+    left: 24.2857142857%;
+  }
+  .mail-icon2 {
+    left: 27.2857142857%;
+  }
+  .resume-icon2 {
+    left: 30.2857142857%;
+  }
+}
+@media (max-width: 500px) {
+  .linkedin-icon2 {
+    left: 20.5714285714%;
+  }
+  .instagram-icon2 {
+    left: 23.5714285714%;
+  }
+  .mail-icon2 {
+    left: 26.5714285714%;
+  }
+  .resume-icon2 {
+    left: 29.5714285714%;
+  }
+}
+@media (max-width: 490px) {
+  .linkedin-icon2 {
+    left: 19.8571428571%;
+  }
+  .instagram-icon2 {
+    left: 22.8571428571%;
+  }
+  .mail-icon2 {
+    left: 25.8571428571%;
+  }
+  .resume-icon2 {
+    left: 28.8571428571%;
+  }
+}
+@media (max-width: 480px) {
+  .linkedin-icon2 {
+    left: 19.1428571429%;
+  }
+  .instagram-icon2 {
+    left: 22.1428571429%;
+  }
+  .mail-icon2 {
+    left: 25.1428571429%;
+  }
+  .resume-icon2 {
+    left: 28.1428571429%;
+  }
+}
+@media (max-width: 470px) {
+  .linkedin-icon2 {
+    left: 18.4285714286%;
+  }
+  .instagram-icon2 {
+    left: 21.4285714286%;
+  }
+  .mail-icon2 {
+    left: 24.4285714286%;
+  }
+  .resume-icon2 {
+    left: 27.4285714286%;
+  }
+}
+@media (max-width: 460px) {
+  .linkedin-icon2 {
+    left: 17.7142857143%;
+  }
+  .instagram-icon2 {
+    left: 20.7142857143%;
+  }
+  .mail-icon2 {
+    left: 23.7142857143%;
+  }
+  .resume-icon2 {
+    left: 26.7142857143%;
+  }
+}
+@media (max-width: 450px) {
+  .linkedin-icon2 {
+    left: 17%;
+  }
+  .instagram-icon2 {
+    left: 20%;
+  }
+  .mail-icon2 {
+    left: 23%;
+  }
+  .resume-icon2 {
+    left: 26%;
+  }
+}
+@media (max-width: 440px) {
+  .linkedin-icon2 {
+    left: 16.2857142857%;
+  }
+  .instagram-icon2 {
+    left: 19.2857142857%;
+  }
+  .mail-icon2 {
+    left: 22.2857142857%;
+  }
+  .resume-icon2 {
+    left: 25.2857142857%;
+  }
+}
+@media (max-width: 430px) {
+  .linkedin-icon2 {
+    left: 15.5714285714%;
+  }
+  .instagram-icon2 {
+    left: 18.5714285714%;
+  }
+  .mail-icon2 {
+    left: 21.5714285714%;
+  }
+  .resume-icon2 {
+    left: 24.5714285714%;
+  }
+}
+@media (max-width: 420px) {
+  .linkedin-icon2 {
+    left: 14.8571428571%;
+  }
+  .instagram-icon2 {
+    left: 17.8571428571%;
+  }
+  .mail-icon2 {
+    left: 20.8571428571%;
+  }
+  .resume-icon2 {
+    left: 23.8571428571%;
+  }
+}
+@media (max-width: 410px) {
+  .linkedin-icon2 {
+    left: 14.1428571429%;
+  }
+  .instagram-icon2 {
+    left: 17.1428571429%;
+  }
+  .mail-icon2 {
+    left: 20.1428571429%;
+  }
+  .resume-icon2 {
+    left: 23.1428571429%;
+  }
+}
+@media (max-width: 400px) {
+  .linkedin-icon2 {
+    left: 13.4285714286%;
+  }
+  .instagram-icon2 {
+    left: 16.4285714286%;
+  }
+  .mail-icon2 {
+    left: 19.4285714286%;
+  }
+  .resume-icon2 {
+    left: 22.4285714286%;
   }
 }/*# sourceMappingURL=mediaquery-contact.css.map */
