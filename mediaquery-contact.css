@@ -11,6 +11,12 @@
   left: 97%;
 }
 
+@media (min-width: 1440px) {
+  #section3 {
+    min-width: 100%;
+  }
+}
+
 @media (max-width: 1430px) {
   .linkedin-icon2 {
     left: 87%;

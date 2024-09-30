@@ -28,6 +28,49 @@
     }
 } */
 
+@media (min-width: 1500px) {
+    .portrait, #left-eye, #right-eye, #left-eyebrow, #right-eyebrow, #face2, #face, #mouth{
+        display: none;
+    }
+
+    .portrait2 svg{
+        width: 60vh;
+        height: 60vh;
+    }
+
+    .portrait2{
+        top: 10%;
+        left: -10%;
+        display: block;
+        opacity: 1;
+    }
+
+    .name-is{
+        width: 70%;
+        font-size: 70px;
+        top: 340px;
+    }
+
+    .hi-my{
+        width: 50%;
+        font-size: 70px;
+        top: 265px;
+    }
+
+    .passionate {
+        top: 100px;
+        position: absolute;
+    }
+
+    .scroll-down{
+        font-size: 8px;
+        left: 29.5%;
+    }
+
+    .please-scroll-line{
+        left: 30%;
+    }
+}
 
 @media (max-width: 1300px){
     .portrait, #left-eye, #right-eye, #left-eyebrow, #right-eyebrow, #face2, #face, #mouth{
