@@ -721,3 +721,71 @@
         z-index: 0.5;
     }
 }
+
+@media (max-width: 400px) {
+    #section2-python{
+        left: -10px;
+    }
+
+    #section2-happymeter-svg, #section2-hangman-svg{
+        width: 9%;
+        left: 30px;
+    }
+
+    #section2-wordle-svg{
+        width: 14%;
+        left: 0px;
+    }
+
+    #section2-line-break1 {top: 30%;}
+    #section2-line-break2 {top: 60%;}
+
+    #section2-happymeter-svg {top: 15%; left: 6.5%;}
+    #section2-wordle-svg {top: 40%; left: 4%;}
+    #section2-hangman-svg {top: 70%; left: 7%;}
+
+    #section2-CHP-content, #section2-WSP-content, #section2-HMG-content {
+        min-width: 21%;
+        font-size: 11px;
+        left: 30px;
+    }
+
+    #section2-CHP-content {top:30%}
+    #section2-CHP {top: 27%; font-size: 9px;}
+
+    #section2-WSP {top: 54%; font-size:11px}
+    #section2-WSP-content {top: 57%;}
+
+    #section2-HMG {top: 83%; font-size:11px}
+    #section2-HMG-content {top: 86%}
+
+    #section2-line-break1, #section2-line-break2{
+        display: none;
+    }
+
+    #section2-line-break1-mobile {top: 41%}
+    #section2-line-break2-mobile {top: 68%}
+
+    #section2-line-break1-mobile, #section2-line-break2-mobile{
+        display: block;
+        min-width: 21%;
+    }
+
+    #section2-CHP, #section2-WSP, #section2-HMG{
+        width: 50%;
+        font-weight: 200;
+        left: 30px;
+    }
+
+    body{
+        overflow: hidden;
+    }
+
+    #section2-background {
+        min-width: 20%; 
+        min-height: 55%; 
+        top: 21%;
+        right: 60%; 
+        z-index: 0.5;
+    }
+}

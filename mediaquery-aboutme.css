@@ -336,3 +336,41 @@
         z-index : 1;
     }
 }
+
+@media (max-width: 400px) {
+    #typewriter {
+        font-size: 40px;
+        max-width: 20%;
+        left: 30px;
+        top: 23%;
+    }
+
+    .about-me-content1{
+        font-size: 11px;
+        left: 30px;
+        width: 20%;
+        top: 42%;
+    }
+    
+    .about-me-content2{
+        font-size: 11px;
+        left: 30px;
+        width: 20%;
+        top: 64%;
+    }
+
+    #frank-ruhl-libre-regular-iam{
+        font-size: 40px;
+        left: 30px;
+        top: 150px;
+    }
+    
+    .about-me-back-filler{
+        display: block;
+        background-color: rgba(147, 175, 203, 0.395);
+        min-width: 35vh; min-height: 36vh;
+        top: 20%; left: 30px;
+        position: absolute;
+        z-index : 1;
+    }
+}
