@@ -360,7 +360,7 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 479px) {
     .section1-title-background {
         left: 30px;
         top: 9%;

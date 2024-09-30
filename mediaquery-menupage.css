@@ -330,3 +330,9 @@
     }
 
 }
+
+@media (max-width: 400px) {
+    dotlottie-player{
+        top: 21.5%;
+    }
+}

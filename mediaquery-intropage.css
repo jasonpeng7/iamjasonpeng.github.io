@@ -508,3 +508,18 @@
     font-style: normal;
 }
 
+@media (max-width: 479px) {
+    .portrait2 svg{
+        width: 50vh;
+        height: 50vh;
+    }
+
+    .portrait2{
+        top: 7%;
+        left: -50%;
+        display: block;
+        animation: fadeIn 1s ease-out forwards, pop 1s ease-out forwards;
+        animation-delay: 2.5s;
+        opacity: 0;
+    }
+}
