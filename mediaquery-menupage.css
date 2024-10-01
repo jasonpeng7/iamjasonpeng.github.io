@@ -331,7 +331,7 @@
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 479px) {
     dotlottie-player{
         top: 21.5%;
     }

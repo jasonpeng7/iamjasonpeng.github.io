@@ -510,8 +510,8 @@
 
 @media (max-width: 479px) {
     .portrait2 svg{
-        width: 50vh;
-        height: 50vh;
+        width: 40vh;
+        height: 40vh;
     }
 
     .portrait2{
@@ -521,5 +521,109 @@
         animation: fadeIn 1s ease-out forwards, pop 1s ease-out forwards;
         animation-delay: 2.5s;
         opacity: 0;
+    }
+
+    .name-is2{
+        font-size: 45px;
+    }
+
+    .hi-my2{
+        font-size: 45px;
+    }
+
+    #hi-my-fade{
+        animation: fadeDown2 1s ease-out forwards;
+        top: 430px;
+        left: 30px;
+        font-family: "Frank Ruhl Libre", serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+        color:rgb(0, 21, 67);
+        position: absolute;
+        animation-delay: 0.5s;
+    }
+
+    #name-is-fade{
+        animation: fadeUp2 1s ease-out forwards;
+        top:480px;
+        left: 30px;
+        font-family: "Frank Ruhl Libre", serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+        color:rgb(0, 21, 67);
+        position: absolute;
+        animation-delay: 0.8s;
+    }
+
+    .passionate{
+        font-size: 13px;
+    }
+
+    #animation-hard-up{
+        top: 550px;
+        width: 40%;
+        left: 30px;
+    }
+}
+
+@media (max-width: 390px) {
+    .portrait2 svg{
+        width: 48vh;
+        height: 48vh;
+    }
+
+    .portrait2{
+        top: 7%;
+        left: -50%;
+        display: block;
+        animation: fadeIn 1s ease-out forwards, pop 1s ease-out forwards;
+        animation-delay: 2.5s;
+        opacity: 0;
+    }
+
+    .name-is2{
+        font-size: 45px;
+    }
+
+    .hi-my2{
+        font-size: 45px;
+    }
+
+    #hi-my-fade{
+        animation: fadeDown2 1s ease-out forwards;
+        top: 430px;
+        left: 30px;
+        font-family: "Frank Ruhl Libre", serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+        color:rgb(0, 21, 67);
+        position: absolute;
+        animation-delay: 0.5s;
+    }
+
+    #name-is-fade{
+        animation: fadeUp2 1s ease-out forwards;
+        top:480px;
+        left: 30px;
+        font-family: "Frank Ruhl Libre", serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+        color:rgb(0, 21, 67);
+        position: absolute;
+        animation-delay: 0.8s;
+    }
+
+    .passionate{
+        font-size: 13px;
+    }
+
+    #animation-hard-up{
+        top: 550px;
+        width: 40%;
+        left: 30px;
     }
 }
