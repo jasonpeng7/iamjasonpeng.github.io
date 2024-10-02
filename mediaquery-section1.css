@@ -401,3 +401,87 @@
         left: 10.5%;
     }
 }
+
+@media (max-width: 450px) {
+    .section1-title-background {
+        left: 30px;
+        top: 9%;
+    }
+
+    /* Common styles for hidden content elements */
+    #hidden-ecs32a, #hidden-ecs20, #hidden-ecs32b, #hidden-harvard {
+        font-size: 11px;
+        width: 15vh;
+    }
+
+    #hidden-ecs32a-content, #hidden-ecs20-content, #hidden-ecs32b-content, #hidden-harvard-content {
+        font-size: 8px;
+        width: 12vh;
+    }
+
+    /* Positioning for ECS32A and ECS32B (left-side elements) */
+    #hidden-ecs32a-content,#hidden-ecs32b-content {
+        left: 4%;
+    }
+
+    #hidden-ecs32a, #hidden-ecs32b{
+        left: 2%;
+    }
+
+    /* Positioning for ECS20 and Harvard (right-side elements) */
+    #hidden-ecs20, #hidden-ecs20-content, #hidden-harvard, #hidden-harvard-content {
+        right: -15%;
+    }
+
+    /* Individual top positions */
+    #hidden-ecs32a, #hidden-ecs32a-content { top: 10%; }
+    #hidden-ecs20, #hidden-ecs20-content { top: 16%; }
+    #hidden-ecs32b, #hidden-ecs32b-content { top: 22%; }
+    #hidden-harvard, #hidden-harvard-content { top: 28%; }
+    
+    .hidden2 {
+        left: 10.5%;
+    }
+}
+
+@media (max-width: 400px) {
+    .section1-title-background {
+        left: 30px;
+        top: 9%;
+    }
+
+    /* Common styles for hidden content elements */
+    #hidden-ecs32a, #hidden-ecs20, #hidden-ecs32b, #hidden-harvard {
+        font-size: 11px;
+        width: 15vh;
+    }
+
+    #hidden-ecs32a-content, #hidden-ecs20-content, #hidden-ecs32b-content, #hidden-harvard-content {
+        font-size: 8px;
+        width: 12vh;
+    }
+
+    /* Positioning for ECS32A and ECS32B (left-side elements) */
+    #hidden-ecs32a-content,#hidden-ecs32b-content {
+        left: 4%;
+    }
+
+    #hidden-ecs32a, #hidden-ecs32b{
+        left: 2%;
+    }
+
+    /* Positioning for ECS20 and Harvard (right-side elements) */
+    #hidden-ecs20, #hidden-ecs20-content, #hidden-harvard, #hidden-harvard-content {
+        right: -15%;
+    }
+
+    /* Individual top positions */
+    #hidden-ecs32a, #hidden-ecs32a-content { top: 10%; }
+    #hidden-ecs20, #hidden-ecs20-content { top: 16%; }
+    #hidden-ecs32b, #hidden-ecs32b-content { top: 22%; }
+    #hidden-harvard, #hidden-harvard-content { top: 28%; }
+    
+    .hidden2 {
+        left: 10.5%;
+    }
+}
